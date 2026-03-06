@@ -33,6 +33,7 @@
 		"dummy_admin_govt_for_bms"
 		"first_ranger_government"
 		"command_government"
+		"pirate_no_dlc_government"
 		"freehold_government"
 	}
 }

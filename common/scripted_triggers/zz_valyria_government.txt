@@ -53,3 +53,65 @@ title_revocation_standard_valid_showing_failures_only_trigger = {
 		NOT = { has_strong_hook = scope:actor }
 	}
 }
+
+
+valid_freeholder_contract_trigger = {
+	government_allows = administrative
+	is_available_quick = {
+		adult = yes
+		alive = yes
+		incapable = no
+	}
+}
+
+valid_freeholder_contract_basic_trigger = {
+	task_contract_taker = {
+		#you have to be a governor
+		trigger_if = {
+			limit = {
+				government_has_flag = government_is_celestial
+			}
+			is_freehold_governor_or_admin_count = yes
+		}
+		trigger_else = {
+			is_freehhold_governor = yes
+		}
+		#and the location has to be in your realm
+		custom_tooltip = {
+			text = task_contract_location_not_in_realm
+			any_sub_realm_county = {
+				any_county_province = {
+					this = root.task_contract_location
+				}
+			}
+		}
+	}
+}
+
+freehold_contract_invalidated_message_trigger = {
+	task_contract_employer ?= {
+		NOT = { root.task_contract_taker ?= this }
+		OR = {
+			is_incapable = yes
+			is_imprisoned = yes
+			is_alive = no
+		}
+	}
+}
+
+is_freehhold_governor = {
+	government_allows = administrative
+	government_has_flag = government_is_freehold
+	is_landed = yes
+	OR = {
+		highest_held_title_tier >= main_administrative_tier
+		highest_held_title_tier >= min_title_maa_tier
+	}
+	tgp_is_ceremonial_liege_trigger = no
+}
+is_freehold_governor_or_admin_count = {
+	government_allows = administrative
+	is_landed = yes
+	highest_held_title_tier >= tier_county
+	government_has_flag = government_is_freehold
+}

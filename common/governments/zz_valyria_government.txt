@@ -23,10 +23,10 @@
     royal_court = any
     blocked_subject_courts = { meritocratic_government celestial_government japan_administrative_government administrative_government steppe_admin_government }
 
-    main_administrative_tier = county
+    main_administrative_tier = duchy
 	min_appointment_tier = county
 	minimum_provincial_maa_tier = county
-    administrative_title_maa_setup = vassals_and_top_liege
+    administrative_title_maa_setup = main_administrative_tier_and_top_liege
 
     domicile_type = dragonkeep 
 
@@ -54,12 +54,16 @@
 		vassal_limit = 100
 		active_accolades = -1
 		title_creation_cost_mult = -0.5
+
+        monthly_treasury_from_liege_mult = -0.15
     }
     top_liege_character_modifier = {
 		# 85% of vassal income goes to the treasury
 		monthly_treasury_from_vassals = 0.85
 		men_at_arms_maintenance = 1.5
 		men_at_arms_recruitment_cost = 1
+        monthly_treasury_from_vassals_mult = 0.05
+        vassal_tax_contribution_mult = 0.05
 	}
 
     # Use flags instead of has_government for moddability if possible (i.e., wherever not visible to the player).

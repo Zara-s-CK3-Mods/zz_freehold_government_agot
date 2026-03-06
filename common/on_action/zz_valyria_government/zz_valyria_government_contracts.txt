@@ -1,0 +1,990 @@
+﻿
+spawn_freehold_governance_contract_on_action = {
+	# Select a random eligible contract to create
+	random_on_action = {
+		100 = freehold_overdue_taxes
+		100 = freehold_hoarding_mayor
+		100 = freehold_bountiful_harvest
+		100 = freehold_rampant_bandits
+		100 = freehold_discontent_soldiers
+		100 = freehold_inept_mayor
+		100 = freehold_prov_investment
+		100 = freehold_raiding_peasants
+		100 = freehold_wild_predators
+		100 = freehold_evil_presence
+		100 = freehold_miraculous_healing
+		100 = freehold_buried_treasure
+		100 = freehold_public_land
+		100 = freehold_mad_prophet
+		100 = freehold_titles_sale
+		100 = freehold_hungry_times
+		100 = freehold_wartime_measures
+	}
+}
+
+
+freehold_overdue_taxes = {
+	trigger = {
+		NOT = { has_character_flag = task_contract_cooldown_overdue_taxes }
+		any_sub_realm_county = {
+			any_county_province = {
+				has_holding = yes
+				NOT = { this = scope:governor.capital_province }
+			}
+		}
+	}
+	
+	effect = {
+		# Select a suitable location
+		random_sub_realm_county = {
+			limit = {
+				any_county_province = {
+					has_holding = yes
+					NOT = { this = scope:governor.capital_province }
+				}
+			}
+			random_county_province = {
+				limit = {
+					has_holding = yes
+					NOT = { this = scope:governor.capital_province }
+				}
+				save_scope_as = target_province
+			}
+		}
+		
+		# Create the contract
+		create_task_contract = {
+			task_contract_type = freehold_overdue_taxes
+			task_contract_tier = scope:governance_task_contract_tier
+			location = scope:target_province
+			save_scope_as = new_governance_issue
+		}
+		
+		# Set a cooldown
+		add_character_flag = {
+			flag = task_contract_cooldown_overdue_taxes
+			years = 10
+		}
+		
+		# General post-creation set up
+		manage_new_governance_contract_effect = yes
+	}
+}
+
+# Hoarding Mayor
+freehold_hoarding_mayor = {
+	trigger = {
+		NOT = { has_character_flag = task_contract_cooldown_hoarding_mayor }
+		any_sub_realm_county = {
+			any_county_province = {
+				has_holding_type = city_holding
+				province_owner = {
+					NOT = { this = scope:governor }
+					gold >= 500 # Mayor needs to have a lot of gold
+				}
+			}
+		}
+	}
+	
+	effect = {
+		# Select a suitable location
+		random_sub_realm_county = {
+			limit = {
+				any_county_province = {
+					has_holding_type = city_holding
+					province_owner = {
+						NOT = { this = scope:governor }
+						gold >= 500 # Mayor needs to have a lot of gold
+					}
+				}
+			}
+			random_county_province = {
+				limit = {
+					has_holding_type = city_holding
+					province_owner = {
+						NOT = { this = scope:governor }
+						gold >= 500 # Mayor needs to have a lot of gold
+					}
+				}
+				save_scope_as = target_province
+			}
+		}
+		
+		# Create the contract
+		create_task_contract = {
+			task_contract_type = freehold_hoarding_mayor
+			task_contract_tier = scope:governance_task_contract_tier
+			location = scope:target_province
+			task_contract_employer = scope:target_province.province_owner
+			save_scope_as = new_governance_issue
+		}
+		
+		# Set a cooldown
+		add_character_flag = {
+			flag = task_contract_cooldown_hoarding_mayor
+			years = 10
+		}
+		
+		# General post-creation set up
+		manage_new_governance_contract_effect = yes
+	}
+}
+
+# Bountiful Harvest
+freehold_bountiful_harvest = {
+	trigger = {
+		NOT = { has_character_flag = task_contract_cooldown_bountiful_harvest }
+	}
+	
+	weight_multiplier = {
+		base = 1
+		modifier = { # Increased chance if there is fertile terrain types present
+			factor = 1.5
+			any_sub_realm_county = {
+				any_county_province = {
+					OR = {
+						terrain = farmlands
+						terrain = floodplains
+					}
+				}
+			}
+		}
+		modifier = { # Reduced chance if there is only rough terrain present
+			factor = 0.5
+			NOT = {
+				any_sub_realm_county = {
+					any_county_province = {
+						OR = {
+							terrain = farmlands
+							terrain = floodplains
+							terrain = plains
+							terrain = drylands
+							terrain = oasis
+							terrain = forest
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	effect = {
+		# Select a suitable location
+		capital_province = {
+			save_scope_as = target_province
+		}
+		
+		# Create the contract
+		create_task_contract = {
+			task_contract_type = freehold_bountiful_harvest
+			task_contract_tier = scope:governance_task_contract_tier
+			location = scope:target_province
+			save_scope_as = new_governance_issue
+		}
+		
+		# Set a cooldown
+		add_character_flag = {
+			flag = task_contract_cooldown_bountiful_harvest
+			years = 10
+		}
+		
+		# General post-creation set up
+		manage_new_governance_contract_effect = yes
+	}
+}
+
+# Rampant Bandits
+freehold_rampant_bandits = {
+	trigger = {
+		NOT = { has_character_flag = task_contract_cooldown_rampant_bandits }
+		any_sub_realm_county = {
+			any_county_province = {
+				NOT = { this = county.holder.capital_province }
+			}
+		}
+	}
+	
+	weight_multiplier = {
+		base = 1
+		modifier = { # Significantly reduce the chance if there is no county with reduced control
+			factor = 0.1
+			NOT = {
+				any_sub_realm_county = { county_control <= 90 }
+			}
+		}
+		modifier = { # Increased chance if there are multiple counties with low control
+			factor = 1.5
+			any_sub_realm_county = {
+				percent >= 0.25
+				county_control <= 75
+			}
+		}
+		modifier = { # Increased it more if control is even lower
+			factor = 2
+			any_sub_realm_county = {
+				percent >= 0.5
+				county_control <= 50
+			}
+		}
+	}
+	
+	effect = {
+		# Select a suitable location
+		random_sub_realm_county = {
+			limit = {
+				any_county_province = {
+					NOT = { this = county.holder.capital_province }
+				}
+			}
+			weight = {
+				base = 1
+				modifier = { # Prioritize counties with low control
+					add = {
+						value = 100
+						subtract = county_control
+					}
+					county_control < 100
+				}
+			}
+			add_county_modifier = {
+				modifier = ep3_governance_rampant_bandits
+				years = 40
+			}
+			random_county_province = {
+				limit = {
+					NOT = { this = county.holder.capital_province }
+				}
+				weight = {
+					base = 1
+					modifier = { # Empty baronies make for better hiding spots
+						add = 15
+						has_holding = no
+					}
+					modifier = { # You can harass cities easier than castles or temples
+						add = 4
+						has_holding_type = city_holding
+					}
+					modifier = { # You can harass temples easier than castles
+						add = 2
+						has_holding_type = church_holding
+					}
+				}
+				save_scope_as = target_province
+			}
+		}
+		
+		# Create the contract
+		create_task_contract = {
+			task_contract_type = freehold_rampant_bandits
+			task_contract_tier = scope:governance_task_contract_tier
+			location = scope:target_province
+			save_scope_as = new_governance_issue
+		}
+		
+		# Set a cooldown
+		add_character_flag = {
+			flag = task_contract_cooldown_rampant_bandits
+			years = 10
+		}
+		
+		# General post-creation set up
+		manage_new_governance_contract_effect = yes
+	}
+}
+
+# Discontent Soldiers
+freehold_discontent_soldiers = {
+	trigger = {
+		NOT = { has_character_flag = task_contract_cooldown_discontent_soldiers }
+		any_maa_regiment = {
+			is_title_maa_regiment = yes
+			is_raised = no
+			count >= 2
+		}
+	}
+	
+	effect = {
+		# Select a suitable location
+		capital_province = {
+			save_scope_as = target_province
+		}
+		
+		# Create the contract
+		create_task_contract = {
+			task_contract_type = freehold_discontent_soldiers
+			task_contract_tier = scope:governance_task_contract_tier
+			location = scope:target_province
+			save_scope_as = new_governance_issue
+		}
+		
+		# Set a cooldown
+		add_character_flag = {
+			flag = task_contract_cooldown_discontent_soldiers
+			years = 10
+		}
+		
+		# General post-creation set up
+		manage_new_governance_contract_effect = yes
+	}
+}
+
+# Inept Mayor
+freehold_inept_mayor = {
+	trigger = {
+		NOT = { has_character_flag = task_contract_cooldown_inept_mayor }
+		any_sub_realm_county = {
+			any_county_province = {
+				has_holding_type = city_holding
+				province_owner = {
+					NOT = { this = scope:governor }
+					stewardship <= mediocre_skill_rating
+				}
+			}
+		}
+	}
+	
+	effect = {
+		# Select a suitable location
+		random_sub_realm_county = {
+			limit = {
+				any_county_province = {
+					has_holding_type = city_holding
+					province_owner = {
+						NOT = { this = scope:governor }
+						stewardship <= mediocre_skill_rating
+					}
+				}
+			}
+			random_county_province = {
+				limit = {
+					has_holding_type = city_holding
+					province_owner = {
+						NOT = { this = scope:governor }
+						stewardship <= mediocre_skill_rating
+					}
+				}
+				save_scope_as = target_province
+			}
+			add_county_modifier = {
+				modifier = ep3_mismanaged_administration_modifier
+				years = 10
+			}
+		}
+		
+		# Create the contract
+		create_task_contract = {
+			task_contract_type = freehold_inept_mayor
+			task_contract_tier = scope:governance_task_contract_tier
+			location = scope:target_province
+			task_contract_employer = scope:target_province.province_owner
+			save_scope_as = new_governance_issue
+		}
+		
+		# Set a cooldown
+		add_character_flag = {
+			flag = task_contract_cooldown_inept_mayor
+			years = 10
+		}
+		
+		# General post-creation set up
+		manage_new_governance_contract_effect = yes
+	}
+}
+
+# Provincial Investment
+freehold_prov_investment = {
+	trigger = {
+		NOT = { has_character_flag = task_contract_cooldown_prov_investment }
+		scope:governance_task_contract_tier = define:NTaskContract|HIGH_TASK_CONTRACT_TIER
+	}
+	
+	weight_multiplier = {
+		base = 1
+		modifier = {
+			has_trait = education_stewardship
+			add = 10
+		}
+	}
+	
+	effect = {
+		# Select a suitable location
+		capital_province = {
+			save_scope_as = target_province
+		}
+		
+		# Create the contract
+		create_task_contract = {
+			task_contract_type = freehold_prov_investment
+			task_contract_tier = scope:governance_task_contract_tier
+			location = scope:target_province
+			save_scope_as = new_governance_issue
+		}
+		
+		# Set a cooldown
+		add_character_flag = {
+			flag = task_contract_cooldown_prov_investment
+			years = 10
+		}
+		
+		# General post-creation set up
+		manage_new_governance_contract_effect = yes
+	}
+}
+
+# Raiding Peasants
+freehold_raiding_peasants = {
+	trigger = {
+		NOT = { has_character_flag = task_contract_cooldown_raiding_peasants }
+		any_sub_realm_county = {
+			any_neighboring_county = {
+				holder = {
+					top_liege = {
+						NOT = { this = scope:governor.top_liege }
+					}
+				}
+			}
+			any_county_province = {
+				has_holding = yes
+			}
+		}
+	}
+	
+	effect = {
+		# Select a suitable location
+		random_sub_realm_county = {
+			limit = {
+				any_neighboring_county = {
+					holder = {
+						top_liege = {
+							NOT = { this = scope:governor.top_liege }
+						}
+					}
+				}
+				any_county_province = {
+					has_holding = yes
+				}
+			}
+			random_county_province = {
+				limit = {
+					has_holding = yes
+				}
+				save_scope_as = target_province
+			}
+		}
+		
+		# Create the contract
+		create_task_contract = {
+			task_contract_type = freehold_raiding_peasants
+			task_contract_tier = scope:governance_task_contract_tier
+			location = scope:target_province
+			save_scope_as = new_governance_issue
+		}
+		
+		# Set a cooldown
+		add_character_flag = {
+			flag = task_contract_cooldown_raiding_peasants
+			years = 10
+		}
+		
+		# General post-creation set up
+		manage_new_governance_contract_effect = yes
+	}
+}
+
+# Wild Predators
+freehold_wild_predators = {
+	trigger = {
+		NOT = { has_character_flag = task_contract_cooldown_wild_predators }
+		any_sub_realm_county = {
+			any_county_province = {
+				OR = {
+					has_building_or_higher = hunting_grounds_01
+					has_building_or_higher = royal_forest_01
+					terrain = forest
+					terrain = jungle
+				}
+			}
+		}
+	}
+	
+	effect = {
+		# Select a suitable location
+		random_sub_realm_county = {
+			limit = {
+				any_county_province = {
+					OR = {
+						has_building_or_higher = hunting_grounds_01
+						has_building_or_higher = royal_forest_01
+						terrain = forest
+						terrain = jungle
+					}
+				}
+			}
+			add_county_modifier = {
+				modifier = ep3_wild_predators_modifier
+				years = 10
+			}
+			random_county_province = {
+				limit = {
+					OR = {
+						has_building_or_higher = hunting_grounds_01
+						has_building_or_higher = royal_forest_01
+					}
+				}
+				alternative_limit = {
+					OR = {
+						terrain = forest
+						terrain = jungle
+					}
+				}
+				save_scope_as = target_province
+			}
+		}
+		
+		# Create the contract
+		create_task_contract = {
+			task_contract_type = freehold_wild_predators
+			task_contract_tier = scope:governance_task_contract_tier
+			location = scope:target_province
+			save_scope_as = new_governance_issue
+		}
+		
+		# Set a cooldown
+		add_character_flag = {
+			flag = task_contract_cooldown_wild_predators
+			years = 10
+		}
+		
+		# General post-creation set up
+		manage_new_governance_contract_effect = yes
+	}
+}
+
+# Evil Presence
+freehold_evil_presence = {
+	trigger = {
+		NOT = { has_character_flag = task_contract_cooldown_evil_presence }
+		scope:governance_task_contract_tier = define:NTaskContract|LOW_TASK_CONTRACT_TIER
+		any_sub_realm_county = {
+			faith.religion = religion:christianity_religion
+			any_county_province = {
+				has_holding = yes
+				province_owner != scope:governor
+			}
+		}
+	}
+	
+	effect = {
+		# Select a suitable location
+		random_sub_realm_county = {
+			limit = {
+				faith.religion = religion:christianity_religion
+				any_county_province = {
+					has_holding = yes
+					province_owner != scope:governor
+				}
+			}
+			random_county_province = {
+				limit = {
+					has_holding = yes
+					province_owner != scope:governor
+				}
+				save_scope_as = target_province
+			}
+		}
+		
+		# Create the contract
+		create_task_contract = {
+			task_contract_type = freehold_evil_presence
+			task_contract_tier = scope:governance_task_contract_tier
+			location = scope:target_province
+			save_scope_as = new_governance_issue
+		}
+		
+		# Set a cooldown
+		add_character_flag = {
+			flag = task_contract_cooldown_evil_presence
+			years = 10
+		}
+		
+		# General post-creation set up
+		manage_new_governance_contract_effect = yes
+	}
+}
+
+# Miraculous Healing
+freehold_miraculous_healing = {
+	trigger = {
+		NOT = { has_character_flag = task_contract_cooldown_miraculous_healing }
+	}
+	
+	effect = {
+		# Select a suitable location
+		capital_province = {
+			save_scope_as = target_province
+		}
+		
+		# Create the contract
+		create_task_contract = {
+			task_contract_type = freehold_miraculous_healing
+			task_contract_tier = scope:governance_task_contract_tier
+			location = scope:target_province
+			save_scope_as = new_governance_issue
+		}
+		
+		# Set a cooldown
+		add_character_flag = {
+			flag = task_contract_cooldown_miraculous_healing
+			years = 10
+		}
+		
+		# General post-creation set up
+		manage_new_governance_contract_effect = yes
+	}
+}
+
+# Buried Treasure
+freehold_buried_treasure = {
+	trigger = {
+		NOT = { has_character_flag = task_contract_cooldown_buried_treasure }
+		any_sub_realm_county = {
+			any_county_province = {
+				has_holding = yes
+				province_owner != scope:governor
+			}
+		}
+	}
+	
+	effect = {
+		# Select a suitable location
+		random_sub_realm_county = {
+			limit = {
+				any_county_province = {
+					has_holding = yes
+					province_owner != scope:governor
+				}
+			}
+			random_county_province = {
+				limit = {
+					has_holding = yes
+					province_owner != scope:governor
+				}
+				save_scope_as = target_province
+			}
+		}
+		
+		# Create the contract
+		create_task_contract = {
+			task_contract_type = freehold_buried_treasure
+			task_contract_tier = scope:governance_task_contract_tier
+			location = scope:target_province
+			save_scope_as = new_governance_issue
+		}
+		
+		# Set a cooldown
+		add_character_flag = {
+			flag = task_contract_cooldown_buried_treasure
+			years = 10
+		}
+		
+		# General post-creation set up
+		manage_new_governance_contract_effect = yes
+	}
+}
+
+# Public Land
+freehold_public_land = {
+	trigger = {
+		NOT = { has_character_flag = task_contract_cooldown_public_land }
+		any_sub_realm_county = {
+			any_county_province = {
+				any_province_domicile = {
+					owner = scope:governor
+					is_domicile_type = estate
+				}
+			}
+		}
+		OR = {
+			any_sub_realm_county = {
+				any_county_province = {
+					has_holding = yes
+					province_owner != scope:governor
+					has_holding_type = castle_holding
+				}
+			}
+			any_sub_realm_county = {
+				any_county_province = {
+					any_province_domicile = {
+						is_domicile_type = estate
+						owner = {
+							NOT = { this = scope:governor }
+							is_ai = yes
+							is_alive = yes
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	effect = {
+		# Select a suitable location
+		random_sub_realm_county = {
+			limit = {
+				any_county_province = {
+					any_province_domicile = {
+						is_domicile_type = estate
+						owner = {
+							NOT = { this = scope:governor }
+							is_ai = yes
+							is_alive = yes
+						}
+					}
+				}
+			}
+			random_county_province = {
+				limit = {
+					any_province_domicile = {
+						is_domicile_type = estate
+						owner = {
+							NOT = { this = scope:governor }
+							is_ai = yes
+							is_alive = yes
+						}
+					}
+
+				}
+				save_scope_as = target_province
+			}
+			scope:target_province ?= {
+				random_province_domicile = {
+					limit = {
+						is_domicile_type = estate
+						owner = {
+							NOT = { this = scope:governor }
+							is_ai = yes
+							is_alive = yes
+						}
+					}
+					owner = { save_scope_as = employer }
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = { exists = scope:target_province }
+			}
+			random_sub_realm_county = {
+				limit = {
+					any_county_province = {
+						has_holding = yes
+						province_owner != scope:governor
+						has_holding_type = castle_holding
+					}
+				}
+				random_county_province = {
+					limit = {
+						has_holding = yes
+						province_owner != scope:governor
+						has_holding_type = castle_holding
+					}
+					save_scope_as = target_province
+					province_owner = { save_scope_as = employer }
+				}
+			}
+		}
+		
+		# Create the contract
+		create_task_contract = {
+			task_contract_type = freehold_public_land
+			task_contract_tier = scope:governance_task_contract_tier
+			location = scope:target_province
+			task_contract_employer = scope:employer
+			save_scope_as = new_governance_issue
+		}
+		
+		# Set a cooldown
+		add_character_flag = {
+			flag = task_contract_cooldown_public_land
+			years = 10
+		}
+		
+		# General post-creation set up
+		manage_new_governance_contract_effect = yes
+	}
+}
+
+# Mad Prophet
+freehold_mad_prophet = {
+	trigger = {
+		NOT = { has_character_flag = task_contract_cooldown_mad_prophet }
+		any_sub_realm_county = {
+			any_county_province = {
+				has_holding = yes
+				province_owner != scope:governor
+			}
+		}
+	}
+	
+	effect = {
+		# Select a suitable location
+		random_sub_realm_county = {
+			limit = {
+				any_county_province = {
+					has_holding = yes
+					province_owner != scope:governor
+				}
+			}
+			random_county_province = {
+				limit = {
+					has_holding = yes
+					province_owner != scope:governor
+				}
+				save_scope_as = target_province
+			}
+		}
+		
+		# Create the contract
+		create_task_contract = {
+			task_contract_type = freehold_mad_prophet
+			task_contract_tier = scope:governance_task_contract_tier
+			location = scope:target_province
+			save_scope_as = new_governance_issue
+		}
+		
+		# Set a cooldown
+		add_character_flag = {
+			flag = task_contract_cooldown_mad_prophet
+			years = 10
+		}
+		
+		# General post-creation set up
+		manage_new_governance_contract_effect = yes
+	}
+}
+
+# Titles for Sale
+freehold_titles_sale = {
+	trigger = {
+		NOT = { has_character_flag = task_contract_cooldown_titles_sale }
+		faith = {
+			NOR = {
+				has_doctrine = doctrine_theocracy_lay_clergy
+				has_doctrine = doctrine_temporal_head
+			}
+		}
+	}
+	
+	effect = {
+		# Select a suitable location
+		capital_province = {
+			save_scope_as = target_province
+		}
+		
+		# Create the contract
+		create_task_contract = {
+			task_contract_type = freehold_titles_sale
+			task_contract_tier = scope:governance_task_contract_tier
+			location = scope:target_province
+			save_scope_as = new_governance_issue
+		}
+		
+		# Set a cooldown
+		add_character_flag = {
+			flag = task_contract_cooldown_titles_sale
+			years = 10
+		}
+		
+		# General post-creation set up
+		manage_new_governance_contract_effect = yes
+	}
+}
+
+# Hungry Times
+freehold_hungry_times = {
+	trigger = {
+		NOT = { has_character_flag = task_contract_cooldown_hungry_times }
+		any_sub_realm_county = {
+			any_county_province = {
+				has_holding = yes
+				province_owner != scope:governor
+				has_variable = epidemic_cooldown_general
+			}
+		}
+	}
+	
+	effect = {
+		# Select a suitable location
+		random_sub_realm_county = {
+			limit = {
+				any_county_province = {
+					has_holding = yes
+					province_owner != scope:governor
+					has_variable = epidemic_cooldown_general
+				}
+			}
+			random_county_province = {
+				limit = {
+					has_holding = yes
+					province_owner != scope:governor
+					has_variable = epidemic_cooldown_general
+				}
+				save_scope_as = target_province
+			}
+		}
+		
+		# Create the contract
+		create_task_contract = {
+			task_contract_type = freehold_hungry_times
+			task_contract_tier = scope:governance_task_contract_tier
+			location = scope:target_province
+			save_scope_as = new_governance_issue
+		}
+		
+		# Set a cooldown
+		add_character_flag = {
+			flag = task_contract_cooldown_hungry_times
+			years = 15 #epidemic_cooldown_general lasts 15 years, and we don't want this to trigger twice in a row for the same place
+		}
+		
+		# General post-creation set up
+		manage_new_governance_contract_effect = yes
+	}
+}
+
+# Wartime Measures
+freehold_wartime_measures = {
+	trigger = {
+		NOT = { has_character_flag = task_contract_cooldown_wartime_measures }
+		liege = { is_at_war = yes }
+		is_at_war = no
+		OR = {
+			vassal_contract_has_flag = admin_theme_frontier
+			vassal_contract_has_flag = admin_theme_military
+		}
+	}
+	
+	effect = {
+		# Select a suitable location
+		capital_province = {
+			save_scope_as = target_province
+		}
+		
+		# Create the contract
+		create_task_contract = {
+			task_contract_type = freehold_wartime_measures
+			task_contract_tier = scope:governance_task_contract_tier
+			location = scope:target_province
+			save_scope_as = new_governance_issue
+		}
+		
+		# Set a cooldown
+		add_character_flag = {
+			flag = task_contract_cooldown_wartime_measures
+			years = 10
+		}
+		
+		# General post-creation set up
+		manage_new_governance_contract_effect = yes
+	}
+}

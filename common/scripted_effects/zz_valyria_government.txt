@@ -1485,3 +1485,71 @@ add_random_external_dragonkeep_building = {
 		}
 	}
 }
+
+
+
+spawn_freehold_governance_contract_effect = {
+	save_scope_as = governor
+	# Select the Contract Tier (somewhat randomized, based on your experience as a governor)
+	random_list = {
+		30 = {
+			save_scope_value_as = {
+				name = governance_task_contract_tier
+				value = define:NTaskContract|LOW_TASK_CONTRACT_TIER
+			}
+		}
+		20 = {
+			save_scope_value_as = {
+				name = governance_task_contract_tier
+				value = define:NTaskContract|MEDIUM_TASK_CONTRACT_TIER
+			}
+
+			modifier = {
+				add = 10
+				has_trait = governor
+			}
+			modifier = {
+				add = 10
+				has_trait = governor
+				has_trait_xp = {
+					trait = governor
+					value >= 40
+				}
+			}
+		}
+		10 = {
+			save_scope_value_as = {
+				name = governance_task_contract_tier
+				value = define:NTaskContract|HIGH_TASK_CONTRACT_TIER
+			}
+
+			modifier = {
+				add = 10
+				has_trait = governor
+			}
+			modifier = {
+				add = 10
+				has_trait = governor
+				has_trait_xp = {
+					trait = governor
+					value >= 40
+				}
+			}
+			modifier = {
+				add = 20
+				has_trait = governor
+				has_trait_xp = {
+					trait = governor
+					value >= 80
+				}
+			}
+		}
+	}
+
+	# Select which contract to create
+	trigger_event = {
+		on_action = spawn_freehold_governance_contract_on_action
+	}
+	
+	play_sound_effect = "event:/DLC/EP3/SFX/Stingers/Byzantine_Flavor/ep3_mx_sting_byzantineflavor_become_governor"
+}

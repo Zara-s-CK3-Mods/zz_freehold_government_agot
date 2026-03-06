@@ -1,0 +1,29 @@
+﻿yearly_playable_pulse = {
+	on_actions = {
+		zz_freeholder_taks_yearly_pulse
+	}
+}
+
+zz_freeholder_taks_yearly_pulse = {
+	effect = {
+		if = {
+			limit = {
+				government_has_flag = government_is_freehold
+				trigger_if = {
+					limit = { is_ai = yes }
+					is_available = yes
+				}
+			}
+			random = {
+				chance = {
+					value = 70
+					if = {
+						limit = { has_character_flag = admin_governance_frequency_cooldown }
+						subtract = 50
+					}
+				}
+				spawn_freehold_governance_contract_effect = yes
+			}
+		}
+	}
+}
