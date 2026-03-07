@@ -388,3 +388,90 @@ zz_valyria_freehold_discovery.9000.b: "Let the past remain in the ruins."
  dragonkeep_tea_04_domicile_building: "Tea Fields"
  dragonkeep_tea_05_domicile_building: "Tea Plantation"
  dragonkeep_tea_06_domicile_building: "Huge Tea Plantation"
+
+   freehold_overdue_taxes_request:0 "$overdue_taxes_request$"
+   freehold_overdue_taxes_contract:0 "$overdue_taxes_contract$"
+   freehold_overdue_taxes_desc:0 "$overdue_taxes_desc$"
+   freehold_overdue_taxes_desc_title:0 "$overdue_taxes_desc_title$"
+
+
+   freehold_hoarding_mayor_request:0 "$hoarding_mayor_request$"
+   freehold_hoarding_mayor_contract:0 "$hoarding_mayor_contract$"
+   freehold_hoarding_mayor_desc:0 "$hoarding_mayor_des$"
+   freehold_hoarding_mayor_desc_title:0 "$$" 
+
+   freehold_rampant_bandits_request:0 "$rampant_bandits_reques$"
+   freehold_rampant_bandits_contract:0 "$rampant_bandits_contrac$"
+   freehold_rampant_bandits_desc:0 "$rampant_bandits_desc$"
+   freehold_rampant_bandits_desc_title:0 "$rampant_bandits_desc_title$"
+
+   freehold_bountiful_harvest_request:0 "$bountiful_harvest_reques$"
+   freehold_bountiful_harvest_contract:0 "$bountiful_harvest_contrac$"
+   freehold_bountiful_harvest_desc:0 "$bountiful_harvest_desc$"
+   freehold_bountiful_harvest_desc_title:0 "$bountiful_harvest_desc_title$"
+
+   freehold_discontent_soldiers_request:0 "$discontent_soldiers_reques$"
+   freehold_discontent_soldiers_contract:0 "$discontent_soldiers_contrac$"
+   freehold_discontent_soldiers_desc:0 "$discontent_soldiers_desc$"
+   freehold_discontent_soldiers_desc_title:0 "$discontent_soldiers_desc_title$"
+
+   freehold_inept_mayor_request:0 "$inept_mayor_reques$"
+   freehold_inept_mayor_contract:0 "$inept_mayor_contrac$"
+   freehold_inept_mayor_desc:0 "$inept_mayor_desc$"
+   freehold_inept_mayor_desc_title:0 "$inept_mayor_desc_title$"
+
+   freehold_prov_investment_request:0 "$prov_investment_reques$"
+   freehold_prov_investment_contract:0 "$prov_investment_contrac$"
+   freehold_prov_investment_desc:0 "$prov_investment_desc$"
+   freehold_prov_investment_desc_title:0 "$prov_investment_desc_title$"
+
+   freehold_raiding_peasants_request:0 "$raiding_peasants_reques$"
+   freehold_raiding_peasants_contract:0 "$raiding_peasants_contrac$"
+   freehold_raiding_peasants_desc:0 "$raiding_peasants_desc$"
+   freehold_raiding_peasants_desc_title:0 "$raiding_peasants_desc_title$"
+
+   freehold_wild_predators_request:0 "$wild_predators_reques$"
+   freehold_wild_predators_contract:0 "$wild_predators_contrac$"
+   freehold_wild_predators_desc:0 "$wild_predators_desc$"
+   freehold_wild_predators_desc_title:0 "$wild_predators_desc_title$"
+
+   freehold_evil_presence_request:0 "$evil_presence_reques$"
+   freehold_evil_presence_contract:0 "$evil_presence_contrac$"
+   freehold_evil_presence_desc:0 "$evil_presence_desc$"
+   freehold_evil_presence_desc_title:0 "$evil_presence_desc_title$"
+
+   freehold_miraculous_healing_request:0 "$miraculous_healing_reques$"
+   freehold_miraculous_healing_contract:0 "$miraculous_healing_contrac$"
+   freehold_miraculous_healing_desc:0 "$miraculous_healing_desc$"
+   freehold_miraculous_healing_desc_title:0 "$miraculous_healing_desc_title$"
+
+   freehold_buried_treasure_request:0 "$buried_treasure_reques$"
+   freehold_buried_treasure_contract:0 "$buried_treasure_contrac$"
+   freehold_buried_treasure_desc:0 "$buried_treasure_desc$"
+   freehold_buried_treasure_desc_title:0 "$buried_treasure_desc_title$"
+
+   freehold_public_land_request:0 "$public_land_reques$"
+   freehold_public_land_contract:0 "$public_land_contrac$"
+   freehold_public_land_desc:0 "$public_land_desc$"
+   freehold_public_land_desc_title:0 "$public_land_desc_title$"
+
+   freehold_mad_prophet_request:0 "$mad_prophet_reques$"
+   freehold_mad_prophet_contract:0 "$mad_prophet_contrac$"
+   freehold_mad_prophet_desc:0 "$mad_prophet_desc$"
+   freehold_mad_prophet_desc_title:0 "$mad_prophet_desc_title$"
+
+   freehold_titles_sale_request:0 "$titles_sale_reques$"
+   freehold_titles_sale_contract:0 "$titles_sale_contrac$"
+   freehold_titles_sale_desc:0 "$titles_sale_desc$"
+   freehold_titles_sale_desc_title:0 "$titles_sale_desc_title$"
+
+   freehold_hungry_times_request:0 "$hungry_times_reques$"
+   freehold_hungry_times_contract:0 "$hungry_times_contrac$"
+   freehold_hungry_times_desc:0 "$hungry_times_desc$"
+   freehold_hungry_times_desc_title:0 "$hungry_times_desc_title$"
+
+   freehold_wartime_measures_request:0 "$wartime_measures_reques$"
+   freehold_wartime_measures_contract:0 "$wartime_measures_contrac$"
+   freehold_wartime_measures_desc:0 "$wartime_measures_desc$"
+   freehold_wartime_measures_desc_title:0 "$wartime_measures_desc_title$"
+

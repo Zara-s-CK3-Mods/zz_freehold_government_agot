@@ -856,7 +856,7 @@ tgp_domicile_conversion_when_changing_government_type = {
 				}
 				give_noble_family_title = {
 					name = noble_family_name
-					tier = county
+					tier = duchy
 					article = DEFAULT_TITLE_NAME_ARTICLE
 					government = $NEW_GOVERNMENT_TYPE$
 					save_scope_as = new_title
