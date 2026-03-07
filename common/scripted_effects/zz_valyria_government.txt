@@ -1553,3 +1553,18 @@ spawn_freehold_governance_contract_effect = {
 	
 	play_sound_effect = "event:/DLC/EP3/SFX/Stingers/Byzantine_Flavor/ep3_mx_sting_byzantineflavor_become_governor"
 }
+
+
+
+freehold_governor_contract_travel_or_progress_effect = {
+	if = {
+		limit = { location != $DESTINATION$ }
+		start_travel_plan = {
+			destination = $DESTINATION$
+			on_arrival_event = $ARRIVAL_EVENT$
+			on_travel_planner_cancel_event = freehold_governor_contract_event.1012
+			on_arrival_destinations = all_but_last
+		}
+	}
+	else = { trigger_event = $ARRIVAL_EVENT$ }
+}

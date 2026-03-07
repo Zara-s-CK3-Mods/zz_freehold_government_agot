@@ -40,7 +40,7 @@ freehold_overdue_taxes = {
 			root.task_contract_location.barony = {
 				save_scope_as = task_contract_location
 			}
-			trigger_event = governor_contract_event.1000
+			trigger_event = freehold_governor_contract_event.1000
 		}
 	}
 
@@ -256,7 +256,7 @@ freehold_hoarding_mayor = {
 			root.task_contract_location.barony = {
 				save_scope_as = task_contract_location
 			}
-			trigger_event = governor_contract_event.1010
+			trigger_event = freehold_governor_contract_event.1010
 		}
 	}
 
@@ -469,7 +469,7 @@ freehold_bountiful_harvest = {
 			root.task_contract_location.barony = {
 				save_scope_as = task_contract_location
 			}
-			trigger_event = governor_contract_event.1020
+			trigger_event = freehold_governor_contract_event.1020
 		}
 	}
 
@@ -689,7 +689,7 @@ freehold_rampant_bandits = {
 			root.task_contract_location.barony = {
 				save_scope_as = task_contract_location
 			}
-			trigger_event = governor_contract_event.1030
+			trigger_event = freehold_governor_contract_event.1030
 		}
 	}
 
@@ -874,7 +874,7 @@ freehold_discontent_soldiers = {
 			root.task_contract_location.barony = {
 				save_scope_as = task_contract_location
 			}
-			trigger_event = governor_contract_event.2000
+			trigger_event = freehold_governor_contract_event.2000
 		}
 	}
 
@@ -1024,7 +1024,7 @@ freehold_inept_mayor = {
 			root.task_contract_location.barony = {
 				save_scope_as = task_contract_location
 			}
-			trigger_event = governor_contract_event.2010
+			trigger_event = freehold_governor_contract_event.2010
 		}
 	}
 
@@ -1156,7 +1156,7 @@ freehold_prov_investment = {
 			root.task_contract_location.barony = {
 				save_scope_as = task_contract_location
 			}
-			trigger_event = governor_contract_event.2020
+			trigger_event = freehold_governor_contract_event.2020
 		}
 	}
 
@@ -1345,7 +1345,7 @@ freehold_raiding_peasants = {
 				save_scope_as = task_contract_location
 			}
 			save_scope_as = task_contract_character
-			trigger_event = governor_contract_event.2030
+			trigger_event = freehold_governor_contract_event.2030
 		}
 	}
 
@@ -1487,7 +1487,7 @@ freehold_wild_predators = {
 			root.task_contract_location.barony = {
 				save_scope_as = task_contract_location
 			}
-			trigger_event = governor_contract_event.2040
+			trigger_event = freehold_governor_contract_event.2040
 		}
 	}
 
@@ -1687,7 +1687,7 @@ freehold_evil_presence = {
 			root.task_contract_location.barony = {
 				save_scope_as = task_contract_location
 			}
-			trigger_event = governor_contract_event.2050
+			trigger_event = freehold_governor_contract_event.2050
 		}
 	}
 
@@ -1847,7 +1847,7 @@ freehold_miraculous_healing = {
 			root.task_contract_location.barony = {
 				save_scope_as = task_contract_location
 			}
-			trigger_event = governor_contract_event.2060
+			trigger_event = freehold_governor_contract_event.2060
 		}
 	}
 
@@ -2000,7 +2000,7 @@ freehold_buried_treasure = {
 			root.task_contract_location.barony = {
 				save_scope_as = task_contract_location
 			}
-			trigger_event = governor_contract_event.2070
+			trigger_event = freehold_governor_contract_event.2070
 		}
 	}
 
@@ -2152,7 +2152,7 @@ freehold_public_land = {
 			root.task_contract_location.barony = {
 				save_scope_as = task_contract_location
 			}
-			trigger_event = governor_contract_event.2080
+			trigger_event = freehold_governor_contract_event.2080
 		}
 	}
 
@@ -2300,7 +2300,7 @@ freehold_mad_prophet = {
 			root.task_contract_location.barony = {
 				save_scope_as = task_contract_location
 			}
-			trigger_event = governor_contract_event.2090
+			trigger_event = freehold_governor_contract_event.2090
 		}
 	}
 
@@ -2484,7 +2484,7 @@ freehold_titles_sale = {
 			root.task_contract_location.barony = {
 				save_scope_as = task_contract_location
 			}
-			trigger_event = governor_contract_event.2100
+			trigger_event = freehold_governor_contract_event.2100
 		}
 	}
 
@@ -2629,7 +2629,7 @@ freehold_hungry_times = {
 			root.task_contract_location.barony = {
 				save_scope_as = task_contract_location
 			}
-			trigger_event = governor_contract_event.2110
+			trigger_event = freehold_governor_contract_event.2110
 		}
 	}
 
@@ -2793,7 +2793,7 @@ freehold_wartime_measures = {
 			root.task_contract_location.barony = {
 				save_scope_as = task_contract_location
 			}
-			trigger_event = governor_contract_event.2120
+			trigger_event = freehold_governor_contract_event.2120
 		}
 	}
 
