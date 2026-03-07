@@ -26,6 +26,7 @@
     main_administrative_tier = duchy
 	min_appointment_tier = duchy
 	minimum_provincial_maa_tier = duchy
+    #administrative_title_maa_setup = vassals_and_top_liege
 
     domicile_type = dragonkeep 
 
