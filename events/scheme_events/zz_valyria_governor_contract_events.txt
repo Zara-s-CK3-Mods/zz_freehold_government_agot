@@ -18,7 +18,7 @@ freehold_governor_contract_event.1000 = {
 	immediate = {
 		# Save the contract
 		random_character_active_contract = {
-			task_contract_type = overdue_taxes
+			task_contract_type = freehold_overdue_taxes
 			save_scope_as = ongoing_contract
 			
 			# Save the location
@@ -184,7 +184,7 @@ freehold_governor_contract_event.1001 = {
 	
 	immediate = {
 		random_character_active_contract = {
-			task_contract_type = overdue_taxes
+			task_contract_type = freehold_overdue_taxes
 			save_scope_as = ongoing_contract
 			
 			# Save the location
@@ -636,7 +636,7 @@ freehold_governor_contract_event.1010 = {
 	immediate = {
 		# Save the contract
 		random_character_active_contract = {
-			task_contract_type = hoarding_mayor
+			task_contract_type = freehold_hoarding_mayor
 			save_scope_as = ongoing_contract
 			
 			# Save the location
@@ -732,7 +732,7 @@ freehold_governor_contract_event.1011 = {
 	immediate = {
 		# Save the contract
 		random_character_active_contract = {
-			task_contract_type = hoarding_mayor
+			task_contract_type = freehold_hoarding_mayor
 			save_scope_as = ongoing_contract
 			
 			# Save the location
@@ -920,7 +920,7 @@ freehold_governor_contract_event.1020 = {
 	immediate = {
 		# Save the contract
 		random_character_active_contract = {
-			task_contract_type = bountiful_harvest
+			task_contract_type = freehold_bountiful_harvest
 			save_scope_as = ongoing_contract
 			
 			# Save the location
@@ -995,7 +995,7 @@ freehold_governor_contract_event.1030 = {
 	immediate = {
 		# Save the contract
 		random_character_active_contract = {
-			task_contract_type = rampant_bandits
+			task_contract_type = freehold_rampant_bandits
 			save_scope_as = ongoing_contract
 			
 			# Save the location
@@ -1074,7 +1074,7 @@ freehold_governor_contract_event.1031 = {
 		add_character_flag = need_military_outfit
 		# Save the contract
 		random_character_active_contract = {
-			task_contract_type = rampant_bandits
+			task_contract_type = freehold_rampant_bandits
 			save_scope_as = ongoing_contract
 			
 			# Save the location
@@ -1323,7 +1323,7 @@ freehold_governor_contract_event.1032 = {
 	immediate = {
 		# Save the contract
 		random_character_active_contract = {
-			task_contract_type = rampant_bandits
+			task_contract_type = freehold_rampant_bandits
 			save_scope_as = ongoing_contract
 			
 			# Save the location
@@ -1414,7 +1414,7 @@ freehold_governor_contract_event.1033 = {
 	immediate = {
 		# Save the contract
 		random_character_active_contract = {
-			task_contract_type = rampant_bandits
+			task_contract_type = freehold_rampant_bandits
 			save_scope_as = ongoing_contract
 			
 			# Save the location
@@ -1457,7 +1457,7 @@ freehold_governor_contract_event.2000 = {
 	immediate = {
 		# Save the contract
 		random_character_active_contract = {
-			task_contract_type = discontent_soldiers
+			task_contract_type = freehold_discontent_soldiers
 			save_scope_as = ongoing_contract
 		}
 		random_neighboring_and_across_water_realm_same_rank_owner = {
@@ -1557,7 +1557,7 @@ freehold_governor_contract_event.2010 = {
 	immediate = {
 		# Save the contract
 		random_character_active_contract = {
-			task_contract_type = inept_mayor
+			task_contract_type = freehold_inept_mayor
 			save_scope_as = ongoing_contract
 			
 			# Save the location
@@ -1655,7 +1655,7 @@ freehold_governor_contract_event.2011 = {
 	immediate = {
 		# Save the contract
 		random_character_active_contract = {
-			task_contract_type = inept_mayor
+			task_contract_type = freehold_inept_mayor
 			save_scope_as = ongoing_contract
 			
 			# Save the location
@@ -1752,7 +1752,7 @@ freehold_governor_contract_event.2020 = {
 	immediate = {
 		# Save the contract
 		random_character_active_contract = {
-			task_contract_type = prov_investment
+			task_contract_type = freehold_prov_investment
 			save_scope_as = ongoing_contract
 			# Save the location
 			task_contract_location = {
@@ -2134,7 +2134,7 @@ freehold_governor_contract_event.2030 = {
 	immediate = {
 		# Save the contract
 		random_character_active_contract = {
-			task_contract_type = raiding_peasants
+			task_contract_type = freehold_raiding_peasants
 			save_scope_as = ongoing_contract
 			
 			# Save the location
@@ -2216,7 +2216,7 @@ freehold_governor_contract_event.2031 = {
 	immediate = {
 		# Save the contract
 		random_character_active_contract = {
-			task_contract_type = raiding_peasants
+			task_contract_type = freehold_raiding_peasants
 			save_scope_as = ongoing_contract
 			
 			# Save the location
@@ -2377,7 +2377,7 @@ freehold_governor_contract_event.2040 = {
 	immediate = {
 		# Save the contract
 		random_character_active_contract = {
-			task_contract_type = wild_predators
+			task_contract_type = freehold_wild_predators
 			save_scope_as = ongoing_contract
 			
 			# Save the location
@@ -2445,7 +2445,7 @@ freehold_governor_contract_event.2041 = {
 	immediate = {
 		# Save the contract
 		random_character_active_contract = {
-			task_contract_type = wild_predators
+			task_contract_type = freehold_wild_predators
 			save_scope_as = ongoing_contract
 			
 			# Save the location
@@ -2838,7 +2838,7 @@ freehold_governor_contract_event.2050 = {
 	immediate = {
 		# Save the contract
 		random_character_active_contract = {
-			task_contract_type = evil_presence
+			task_contract_type = freehold_evil_presence
 			save_scope_as = ongoing_contract
 			
 			# Save the location
@@ -2907,7 +2907,7 @@ freehold_governor_contract_event.2051 = {
 	immediate = {
 		# Save the contract
 		random_character_active_contract = {
-			task_contract_type = evil_presence
+			task_contract_type = freehold_evil_presence
 			save_scope_as = ongoing_contract
 			
 			# Save the location
@@ -3019,7 +3019,7 @@ freehold_governor_contract_event.2060 = {
 	immediate = {
 		# Save the contract
 		random_character_active_contract = {
-			task_contract_type = miraculous_healing
+			task_contract_type = freehold_miraculous_healing
 			save_scope_as = ongoing_contract
 			
 			# Save the location
@@ -3171,7 +3171,7 @@ freehold_governor_contract_event.2070 = {
 	immediate = {
 		# Save the contract
 		random_character_active_contract = {
-			task_contract_type = buried_treasure
+			task_contract_type = freehold_buried_treasure
 			save_scope_as = ongoing_contract
 			
 			# Save the location
@@ -3261,7 +3261,7 @@ freehold_governor_contract_event.2071 = {
 	immediate = {
 		# Save the contract
 		random_character_active_contract = {
-			task_contract_type = buried_treasure
+			task_contract_type = freehold_buried_treasure
 			save_scope_as = ongoing_contract
 			
 			# Save the location
@@ -3414,7 +3414,7 @@ freehold_governor_contract_event.2080 = {
 	immediate = {
 		# Save the contract
 		random_character_active_contract = {
-			task_contract_type = public_land
+			task_contract_type = freehold_public_land
 			save_scope_as = ongoing_contract
 			
 			# Save the location
@@ -3489,7 +3489,7 @@ freehold_governor_contract_event.2081 = {
 	immediate = {
 		# Save the contract
 		random_character_active_contract = {
-			task_contract_type = buried_treasure
+			task_contract_type = freehold_buried_treasure
 			save_scope_as = ongoing_contract
 			
 			# Save the location
@@ -3622,7 +3622,7 @@ freehold_governor_contract_event.2090 = {
 	immediate = {
 		# Save the contract
 		random_character_active_contract = {
-			task_contract_type = mad_prophet
+			task_contract_type = freehold_mad_prophet
 			save_scope_as = ongoing_contract
 			
 			# Save the location
@@ -3726,7 +3726,7 @@ freehold_governor_contract_event.2091 = {
 	immediate = {
 		# Save the contract
 		random_character_active_contract = {
-			task_contract_type = mad_prophet
+			task_contract_type = freehold_mad_prophet
 			save_scope_as = ongoing_contract
 			
 			# Save the location
@@ -4065,7 +4065,7 @@ freehold_governor_contract_event.2100 = {
 	immediate = {
 		# Save the contract
 		random_character_active_contract = {
-			task_contract_type = titles_sale
+			task_contract_type = freehold_titles_sale
 			save_scope_as = ongoing_contract
 			
 			# Save the location
@@ -4186,7 +4186,7 @@ freehold_governor_contract_event.2110 = {
 			triggered_desc = {
 				trigger = {
 					any_character_active_contract = {
-						task_contract_type = hungry_times
+						task_contract_type = freehold_hungry_times
 						task_contract_tier >= define:NTaskContract|HIGH_TASK_CONTRACT_TIER
 					}
 				}
@@ -4195,7 +4195,7 @@ freehold_governor_contract_event.2110 = {
 			triggered_desc = {
 				trigger = {
 					any_character_active_contract = {
-						task_contract_type = hungry_times
+						task_contract_type = freehold_hungry_times
 						task_contract_tier = define:NTaskContract|MEDIUM_TASK_CONTRACT_TIER
 					}
 				}
@@ -4214,7 +4214,7 @@ freehold_governor_contract_event.2110 = {
 	immediate = {
 		# Save the contract
 		random_character_active_contract = {
-			task_contract_type = hungry_times
+			task_contract_type = freehold_hungry_times
 			save_scope_as = ongoing_contract
 			
 			# Save the location
@@ -4286,7 +4286,7 @@ freehold_governor_contract_event.2111 = {
 	immediate = {
 		# Save the contract
 		random_character_active_contract = {
-			task_contract_type = hungry_times
+			task_contract_type = freehold_hungry_times
 			save_scope_as = ongoing_contract
 			
 			# Save the location
@@ -4422,7 +4422,7 @@ freehold_governor_contract_event.2120 = {
 	immediate = {
 		# Save the contract
 		random_character_active_contract = {
-			task_contract_type = wartime_measures
+			task_contract_type = freehold_wartime_measures
 			save_scope_as = ongoing_contract
 			
 			# Save the location
