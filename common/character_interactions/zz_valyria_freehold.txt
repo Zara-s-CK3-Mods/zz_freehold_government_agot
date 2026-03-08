@@ -322,23 +322,6 @@ zz_establish_dragon_rider_house = {
 				CHARACTER = scope:recipient 
 				PRESTIGE = major_prestige_gain
 			}
-			create_dynamic_title = {
-				tier = duchy
-				name = NEW_CREATED_TITLE_NAME
-			}
-			create_title_and_vassal_change = {
-				type = created
-				save_scope_as = change
-				add_claim_on_loss = no
-			}
-			scope:new_title = {
-				change_title_holder = {
-					holder = scope:recipient
-					change = scope:change
-					government_base = scope:actor
-				}
-			}
-			resolve_title_and_vassal_change = scope:change
 			if = {
 				limit = {
 					liege ?= {

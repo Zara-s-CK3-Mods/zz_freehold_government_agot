@@ -62,7 +62,6 @@
 		monthly_treasury_from_vassals = 0.85
 		men_at_arms_maintenance = 1.25
 		men_at_arms_recruitment_cost = 1
-        monthly_treasury_from_vassals_mult = 0.1
         tax_mult = 0.2
         vassal_tax_contribution_mult = 0.1
 	}

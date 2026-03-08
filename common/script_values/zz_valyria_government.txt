@@ -246,6 +246,7 @@ house_power_score = {
 }
 
 
+
 @valyrian_tax_base = 1
 @valyrian_tax_scale_addition_per_tier = 0.25
 @valyrian_tax_tier_1 = @[valyrian_tax_base]

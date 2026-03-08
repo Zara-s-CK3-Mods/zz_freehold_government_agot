@@ -43,3 +43,12 @@ zz_valyria_freehold_discovery.9000 = {
 
 	}
 }
+
+namespace = zz_valyria_freehold 
+zz_valyria_freehold.001 = {
+	hidden = yes
+
+	immediate = {
+		remove_decision_cooldown = extract_gold_from_treasury
+	}
+}
