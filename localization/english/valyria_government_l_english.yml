@@ -18,6 +18,8 @@ zz_valyria_dragon_spears_flavor:0 "A Heavy Pikeman unit of the $game_concept_fre
  game_concept_freehold: "Freehold"
  game_concept_freehold_i: "@government_type_administrative!"
  game_concept_freehold_desc: "$game_concept_freehold$ is a [government_form|E] that appoints [characters|E] as [governors|E], to manage and preside over land, called [provinces|E], on behalf of their [liege|E].\n\n$game_concept_freehold$ Characters have access to [influence|E] and some also have a personal [family_estate|E].\n\nOnly [independent|E] [rulers|E] of an $game_concept_freehold$ [realm|E] have [legitimacy|E], while [vassals|E] do not.\n\n$admin_cannot_declare_internal_wars$"
+ freehold_government_house_attribute_flavor_name: "[powerful_family_attribute|E]"
+ freehold_government_house_attribute_flavor_name_no_tooltip: "$game_concept_powerful_family_attribute$"
 
 ## Script Values 
 mages_house_desc:0 "House Mages"
@@ -53,8 +55,6 @@ convert_to_freehold_decision_confirm:0 "Adopt Ways of the Freehold"
  empire_freehold: "Freehold"
 
 ## House Unities
-arcane_mage_lords_house_power:0 "Magic Lords"
-arcane_mage_lords_house_power_desc:0 "Mighty lords of the arcane, this familhy prioritises magical power over all else."
 mighty_dragon_lords_house_power:0 "Dragon Lords"
 mighty_dragon_lords_house_power_desc:0 "Trainers of dragons, this family takes most seriously its mighty beasts of war."
 

@@ -360,7 +360,7 @@ dragonkeep_temple_small_03 = {
 }
 
 # Crypt sub-branch
-dragonkeep_crypt_small_04 = {
+dragonkeep_temple_crypt_04 = {
 	construction_time = 730
 	allowed_domicile_types = {  dragonkeep}
 	previous_building = dragonkeep_temple_small_03
@@ -498,10 +498,10 @@ dragonkeep_crypt_small_04 = {
 		soundeffect = "event:/DLC/EP3/SFX/UI/domicile_buildings/ep3_ui_domicile_buildings_temple_crypt"
 	}
 }
-dragonkeep_crypt_small_05 = {
+dragonkeep_temple_crypt_05 = {
 	construction_time = 730
 	allowed_domicile_types = {  dragonkeep}
-	previous_building = dragonkeep_crypt_small_04
+	previous_building = dragonkeep_temple_crypt_04
 
 	can_construct = {
 		domicile ?= { has_domicile_building_or_higher = dragonkeep_main_04 }
@@ -636,10 +636,10 @@ dragonkeep_crypt_small_05 = {
 		soundeffect = "event:/DLC/EP3/SFX/UI/domicile_buildings/ep3_ui_domicile_buildings_temple_crypt"
 	}
 }
-dragonkeep_crypt_small_06 = {
+dragonkeep_temple_crypt_06 = {
 	construction_time = 730
 	allowed_domicile_types = {  dragonkeep}
-	previous_building = dragonkeep_crypt_small_05
+	previous_building = dragonkeep_temple_crypt_05
 
 	can_construct = {
 		domicile ?= { has_domicile_building_or_higher = dragonkeep_main_05 }
@@ -777,7 +777,7 @@ dragonkeep_crypt_small_06 = {
 }
 
 # Temple sub-branch
-dragonkeep_large_04 = {
+dragonkeep_temple_large_04 = {
 	construction_time = 730
 	allowed_domicile_types = {  dragonkeep}
 	previous_building = dragonkeep_temple_small_03
@@ -903,10 +903,10 @@ dragonkeep_large_04 = {
 		soundeffect = "event:/DLC/EP3/SFX/UI/domicile_buildings/ep3_ui_domicile_buildings_temple_large"
 	}
 }
-dragonkeep_large_05 = {
+dragonkeep_temple_large_05 = {
 	construction_time = 730
 	allowed_domicile_types = {  dragonkeep}
-	previous_building = dragonkeep_large_04
+	previous_building = dragonkeep_temple_large_04
 
 	can_construct = {
 		domicile ?= { has_domicile_building_or_higher = dragonkeep_main_04 }
@@ -1029,10 +1029,10 @@ dragonkeep_large_05 = {
 		soundeffect = "event:/DLC/EP3/SFX/UI/domicile_buildings/ep3_ui_domicile_buildings_temple_large"
 	}
 }
-dragonkeep_large_06 = {
+dragonkeep_temple_large_06 = {
 	construction_time = 730
 	allowed_domicile_types = {  dragonkeep}
-	previous_building = dragonkeep_large_05
+	previous_building = dragonkeep_temple_large_05
 
 	can_construct = {
 		domicile ?= { has_domicile_building_or_higher = dragonkeep_main_05 }
@@ -1159,7 +1159,7 @@ dragonkeep_large_06 = {
 }
 
 # Monastery sub-branch
-dragonkeep_monastery_04 = {
+dragonkeep_temple_monastery_04 = {
 	construction_time = 730
 	allowed_domicile_types = {  dragonkeep}
 	previous_building = dragonkeep_temple_small_03
@@ -1288,10 +1288,10 @@ dragonkeep_monastery_04 = {
 		soundeffect = "event:/DLC/EP3/SFX/UI/domicile_buildings/ep3_ui_domicile_buildings_temple_monastery"
 	}
 }
-dragonkeep_monastery_05 = {
+dragonkeep_temple_monastery_05 = {
 	construction_time = 730
 	allowed_domicile_types = {  dragonkeep}
-	previous_building = dragonkeep_monastery_04
+	previous_building = dragonkeep_temple_monastery_04
 	
 	can_construct = {
 		faith = { has_doctrine = tenet_monasticism }
@@ -1417,10 +1417,10 @@ dragonkeep_monastery_05 = {
 		soundeffect = "event:/DLC/EP3/SFX/UI/domicile_buildings/ep3_ui_domicile_buildings_temple_monastery"
 	}
 }
-dragonkeep_monastery_06 = {
+dragonkeep_temple_monastery_06 = {
 	construction_time = 730
 	allowed_domicile_types = {  dragonkeep}
-	previous_building = dragonkeep_monastery_05
+	previous_building = dragonkeep_temple_monastery_05
 	
 	can_construct = {
 		faith = { has_doctrine = tenet_monasticism }
