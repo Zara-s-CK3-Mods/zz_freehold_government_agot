@@ -1,4 +1,4 @@
-dragonkeep_temple_small_01 = {
+﻿dragonkeep_temple_small_01 = {
 	construction_time = 730
 	allowed_domicile_types = {  dragonkeep}
 
