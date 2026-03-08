@@ -60,10 +60,11 @@
     top_liege_character_modifier = {
 		# 85% of vassal income goes to the treasury
 		monthly_treasury_from_vassals = 0.85
-		men_at_arms_maintenance = 1.5
+		men_at_arms_maintenance = 1.25
 		men_at_arms_recruitment_cost = 1
-        monthly_treasury_from_vassals_mult = 0.05
-        vassal_tax_contribution_mult = 0.05
+        monthly_treasury_from_vassals_mult = 0.1
+        tax_mult = 0.2
+        vassal_tax_contribution_mult = 0.1
 	}
 
     # Use flags instead of has_government for moddability if possible (i.e., wherever not visible to the player).
@@ -73,6 +74,7 @@
         government_can_use_tributary_men_at_arms
 
          # These flags only exist for loc and in-game descriptions
+        government_has_meritx
         government_has_influence
         government_has_treasury
         government_has_title_men_at_arms
