@@ -1,7 +1,7 @@
 ﻿zz_mages_tower_tower_01 = {
 	construction_time = slow_construction_time
 
-	type_icon = "icon_bleeding_tower.dds"
+	type_icon = "icon_structure_cluny_abbey.dds"
 
 	cost_gold = 1500
 	can_construct = {
@@ -36,6 +36,7 @@
 	}
 
 	flag = zz_mages_tower_tower_01
+	type = great_building
 }
 
 
