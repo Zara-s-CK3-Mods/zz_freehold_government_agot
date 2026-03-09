@@ -662,6 +662,15 @@ watermills_01 = {
 			}
 			is_county_capital = yes
 		}
+		trigger_else_if = {
+			limit = {
+				culture = {
+					has_cultural_parameter = watermills_windmills_cities
+					has_cultural_parameter = dragon_dreams_more_common
+				}
+			}
+			has_building_or_higher = city_01
+		}
 		trigger_else = {
 			culture = {
 				has_cultural_parameter = watermills_windmills_cities
@@ -669,12 +678,7 @@ watermills_01 = {
 			OR = {
 				is_county_capital = yes
 				AND = {
-					NOR = {NOT = { 
-							has_cultural_parameter = dragon_dreams_more_common
-						}
-						NOT = { 
-							has_cultural_parameter = dragon_dreams_more_common
-						}
+					NOR = {
 						has_building_or_higher = windmills_01
 						has_building_or_higher = caravanserai_01
 					}
@@ -693,16 +697,24 @@ watermills_01 = {
 				is_county_capital = no
 				culture = {
 					has_cultural_parameter = watermills_windmills_cities
+					NOT = { has_cultural_parameter = dragon_dreams_more_common}
 				}
 			}
 			has_building_or_higher = city_01
 			NOR = {
-				NOT = { 
-					has_cultural_parameter = dragon_dreams_more_common
-				}
 				has_building_or_higher = windmills_01
 				has_building_or_higher = caravanserai_01
 			}
+		}
+		trigger_else_if = {
+			limit = {
+				has_holding_type = city_holding
+				culture = {
+					has_cultural_parameter = watermills_windmills_cities
+					has_cultural_parameter = dragon_dreams_more_common
+				}
+			}
+			has_building_or_higher = city_01
 		}
 		trigger_else = {
 			building_requirement_castle_city_church = { LEVEL = 01 }
@@ -1423,11 +1435,20 @@ windmills_01 = {
 			limit = {
 				NOT = {
 					scope:holder.culture = {
-					has_cultural_parameter = watermills_windmills_cities
+						has_cultural_parameter = watermills_windmills_cities
 					}
 				}
 			}
 			is_county_capital = yes
+		}
+		trigger_else_if = {
+			limit = {
+				scope:holder.culture = {
+					has_cultural_parameter = watermills_windmills_cities
+					has_cultural_parameter = dragon_dreams_more_common
+				}
+			}
+			has_building_or_higher = city_01
 		}
 		trigger_else = {
 			scope:holder.culture = {
@@ -1437,9 +1458,6 @@ windmills_01 = {
 				is_county_capital = yes
 				AND = {
 					NOR = {
-						NOT = { 
-							has_cultural_parameter = dragon_dreams_more_common
-						}
 						has_building_or_higher = watermills_01
 						has_building_or_higher = caravanserai_01
 					}
@@ -1455,18 +1473,29 @@ windmills_01 = {
 		trigger_if = {
 			limit = {
 				has_holding_type = city_holding
+				culture = {
+					not = {
+						has_cultural_parameter = dragon_dreams_more_common
+					}
+				}
 			}
 			has_building_or_higher = city_01
 			culture = {
 				has_cultural_parameter = watermills_windmills_cities
 			}
 			NOR = {
-				NOT = { 
-					has_cultural_parameter = dragon_dreams_more_common
-				}
 				has_building_or_higher = watermills_01
 				has_building_or_higher = caravanserai_01
 			}
+		}
+		trigger_else_if = {
+			limit = {
+				culture = {
+					has_cultural_parameter = watermills_windmills_cities
+					has_cultural_parameter = dragon_dreams_more_common
+				}
+			}
+			has_building_or_higher = city_01
 		}
 		trigger_else_if = {
 			limit = {

@@ -126,7 +126,7 @@
    building_type_valyrian_tower_01:0 "Valyrian Spires"
    building_type_valyrian_tower_01_desc:0 "The towers of Valyria reflect the design paradigms of a world of Dragons. These large dominating towers enable the swift mounting of dragons to facilitate rapid movement within the city scape. When you are masters of the sky, why would you not look ever upwards." 
    building_valyrian_tower_01:0 "Valyrian Spires" 
-   building_valyrian_tower_01_desc:0 "" 
+   building_valyrian_tower_01_desc:0 "$building_type_valyrian_tower_01_desc$" 
 
    building_type_valyrian_tower_02:0 "$building_type_valyrian_tower_01$"
    building_type_valyrian_tower_02_desc:0 "$building_type_valyrian_tower_01_desc$" 
