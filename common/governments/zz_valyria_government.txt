@@ -73,7 +73,7 @@
         government_can_use_tributary_men_at_arms
 
          # These flags only exist for loc and in-game descriptions
-        government_has_meritx
+        government_has_merit
         government_has_influence
         government_has_treasury
         government_has_title_men_at_arms
