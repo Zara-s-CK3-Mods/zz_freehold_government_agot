@@ -247,8 +247,8 @@ house_power_score = {
 
 
 
-@valyrian_tax_base = 1
-@valyrian_tax_scale_addition_per_tier = 0.25
+@valyrian_tax_base = 2
+@valyrian_tax_scale_addition_per_tier = 0.5
 @valyrian_tax_tier_1 = @[valyrian_tax_base]
 @valyrian_tax_tier_2 = @[valyrian_tax_tier_1 + valyrian_tax_scale_addition_per_tier]
 @valyrian_tax_tier_3 = @[valyrian_tax_tier_2 + valyrian_tax_scale_addition_per_tier]
@@ -271,3 +271,31 @@ valyrian_building_tax_tier_7 = @[valyrian_tax_tier_7]
 valyrian_building_tax_tier_8 = @[valyrian_tax_tier_8]
 valyrian_building_tax_tier_9 = @[valyrian_tax_tier_9]
 valyrian_building_tax_tier_10 = @[valyrian_tax_tier_10]
+
+
+@valyrian_tax_mult_base = 0.08
+@valyrian_tax_mult_addition_per_tier = 0.08
+
+@valyrian_tax_mult_tier_1 = @[valyrian_tax_mult_base]
+@valyrian_tax_mult_tier_2 = @[valyrian_tax_mult_tier_1 + valyrian_tax_mult_addition_per_tier]
+@valyrian_tax_mult_tier_3 = @[valyrian_tax_mult_tier_2 + valyrian_tax_mult_addition_per_tier]
+@valyrian_tax_mult_tier_4 = @[valyrian_tax_mult_tier_3 + valyrian_tax_mult_addition_per_tier]
+@valyrian_tax_mult_tier_5 = @[valyrian_tax_mult_tier_4 + valyrian_tax_mult_addition_per_tier]
+@valyrian_tax_mult_tier_6 = @[valyrian_tax_mult_tier_5 + valyrian_tax_mult_addition_per_tier]
+@valyrian_tax_mult_tier_7 = @[valyrian_tax_mult_tier_6 + valyrian_tax_mult_addition_per_tier]
+@valyrian_tax_mult_tier_8 = @[valyrian_tax_mult_tier_7 + valyrian_tax_mult_addition_per_tier]
+#AGOT Added
+@valyrian_tax_mult_tier_9 = @[valyrian_tax_mult_tier_8 + valyrian_tax_mult_addition_per_tier]
+@valyrian_tax_mult_tier_10 = @[valyrian_tax_mult_tier_9 + valyrian_tax_mult_addition_per_tier]
+
+
+valyrian_building_tax_mult_tier_1 = @[valyrian_tax_mult_tier_1]
+valyrian_building_tax_mult_tier_2 = @[valyrian_tax_mult_tier_2]
+valyrian_building_tax_mult_tier_3 = @[valyrian_tax_mult_tier_3]
+valyrian_building_tax_mult_tier_4 = @[valyrian_tax_mult_tier_4]
+valyrian_building_tax_mult_tier_5 = @[valyrian_tax_mult_tier_5]
+valyrian_building_tax_mult_tier_6 = @[valyrian_tax_mult_tier_6]
+valyrian_building_tax_mult_tier_7 = @[valyrian_tax_mult_tier_7]
+valyrian_building_tax_mult_tier_8 = @[valyrian_tax_mult_tier_8]
+valyrian_building_tax_mult_tier_9 = @[valyrian_tax_mult_tier_9]
+valyrian_building_tax_mult_tier_10 = @[valyrian_tax_mult_tier_10]
