@@ -486,3 +486,14 @@
    freehold_wartime_measures_contract:0 "$wartime_measures_contract$"
    freehold_wartime_measures_desc:0 "$wartime_measures_desc$"
    freehold_wartime_measures_desc_title:0 "$wartime_measures_desc_title$"
+
+
+   great_project_type_construct_mages_spire:0 "Construct Mage's Tower"
+
+   great_project_type_construct_mages_spire_desc:0 "A mighty tower that rises up towards the sky. Our magical might is freely demonstrated by its many rows of books, and the crackling magical wards that glow in a purple hue in the setting son. This tower will rapidly become an economic hub in surrounding cities, while providing great benefits to our magical capabilities."
+   great_project_type_construct_mages_spire_contribution_base_materials: "Construction Materials"
+   great_project_type_construct_mages_spire_contribution_magical_material: "Magical Materials"
+   great_project_type_construct_mages_spire_contribution_work_force: "Workforce"
+   great_project_type_construct_mages_spire_contribution_acolytes: "Acolytes"
+
+#"Our military might can be displayed through the construction of a great fortress that accommodates innumerable soldiers. Military commanders will be able to recruit more troops and large garrisons, which in turn will greatly benefit the area's defensive strength."

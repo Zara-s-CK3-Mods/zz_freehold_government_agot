@@ -1754,6 +1754,9 @@
 		can_pass = {
 			can_change_succession_law_trigger = yes
 			government_allows = administrative
+			NOT = { 
+				government_has_flag = government_is_freehold
+			}
 			OR = {
 				is_independent_ruler = yes
 				liege = {
@@ -1764,6 +1767,9 @@
 		can_have = {
 			can_change_succession_law_trigger = yes
 			government_allows = administrative
+			NOT = { 
+				government_has_flag = government_is_freehold
+			}
 		}
 		should_start_with = {
 			has_ep3_dlc_trigger = yes

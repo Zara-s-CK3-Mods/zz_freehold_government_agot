@@ -165,8 +165,7 @@ city_holding = {
 		agot_steppe_farms_01
 		agot_slave_camps_01
 		city_walls_01
-
-		zz_mages_tower_tower_01
+		
 		valyrian_tower_01
 	}
 
