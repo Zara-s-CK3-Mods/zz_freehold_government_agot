@@ -118,50 +118,7 @@
    freehold_province_border_law_2: "Fixed Border Policy"
    freehold_province_border_law_2_effects_not_in_prev: "$EFFECT_LIST_BULLET$#indent_newline:3 [governors|E] #bold cannot#! use the [GetScheme('dispute_border').GetTypeName] and [GetScheme('subsume_province').GetTypeName] [schemes|E]#!"
    
-   building_type_zz_mages_tower_tower_01:0 "Mage's Tower"
-   building_type_zz_mages_tower_tower_01_desc:0 "A mighty tower, reaching far into the heavens, filled with acolytes and apprentices singing their sorcerous chants, generating arcane energies that crackle and burn."
-   building_zz_mages_tower_tower_01:0 "$building_type_zz_mages_tower_tower_01$"
-   building_zz_mages_tower_tower_01_desc:0 "$building_type_zz_mages_tower_tower_01_desc$"
-
-   building_type_valyrian_tower_01:0 "Valyrian Spires"
-   building_type_valyrian_tower_01_desc:0 "The towers of Valyria reflect the design paradigms of a world of Dragons. These large dominating towers enable the swift mounting of dragons to facilitate rapid movement within the city scape. When you are masters of the sky, why would you not look ever upwards." 
-   building_valyrian_tower_01:0 "Valyrian Spires" 
-   building_valyrian_tower_01_desc:0 "$building_type_valyrian_tower_01_desc$" 
-
-   building_type_valyrian_tower_02:0 "$building_type_valyrian_tower_01$"
-   building_type_valyrian_tower_02_desc:0 "$building_type_valyrian_tower_01_desc$" 
-   building_valyrian_tower_02:0 "$building_valyrian_tower_01$" 
-   building_valyrian_tower_02_desc:0 "$building_valyrian_tower_01_desc$"
-
-   building_type_valyrian_tower_03:0 "$building_type_valyrian_tower_01$"
-   building_type_valyrian_tower_03_desc:0 "$building_type_valyrian_tower_01_desc$" 
-   building_valyrian_tower_03:0 "$building_valyrian_tower_01$" 
-   building_valyrian_tower_03_desc:0 "$building_valyrian_tower_01_desc$"
-
-   building_type_valyrian_tower_04:0 "$building_type_valyrian_tower_01$"
-   building_type_valyrian_tower_04_desc:0 "$building_type_valyrian_tower_01_desc$" 
-   building_valyrian_tower_04:0 "$building_valyrian_tower_01$" 
-   building_valyrian_tower_04_desc:0 "$building_valyrian_tower_01_desc$"
-
-   building_type_valyrian_tower_05:0 "$building_type_valyrian_tower_01$"
-   building_type_valyrian_tower_05_desc:0 "$building_type_valyrian_tower_01_desc$" 
-   building_valyrian_tower_05:0 "$building_valyrian_tower_01$" 
-   building_valyrian_tower_05_desc:0 "$building_valyrian_tower_01_desc$"
-
-   building_type_valyrian_tower_06:0 "$building_type_valyrian_tower_01$"
-   building_type_valyrian_tower_06_desc:0 "$building_type_valyrian_tower_01_desc$" 
-   building_valyrian_tower_06:0 "$building_valyrian_tower_01$" 
-   building_valyrian_tower_06_desc:0 "$building_valyrian_tower_01_desc$"
- 
-   building_type_valyrian_tower_07:0 "$building_type_valyrian_tower_01$"
-   building_type_valyrian_tower_07_desc:0 "$building_type_valyrian_tower_01_desc$" 
-   building_valyrian_tower_07:0 "$building_valyrian_tower_01$" 
-   building_valyrian_tower_07_desc:0 "$building_valyrian_tower_01_desc$"
    
-   building_type_valyrian_tower_08:0 "$building_type_valyrian_tower_01$"
-   building_type_valyrian_tower_08_desc:0 "$building_type_valyrian_tower_01_desc$" 
-   building_valyrian_tower_08:0 "$building_valyrian_tower_01$" 
-   building_valyrian_tower_08_desc:0 "$building_valyrian_tower_01_desc$"
 
 
    dragonkeep_main_01_domicile_building: "Dragonlord's Villa"
@@ -488,6 +445,48 @@
    freehold_wartime_measures_desc_title:0 "$wartime_measures_desc_title$"
 
 
+
+   building_type_valyrian_tower_01:0 "Valyrian Spires"
+   building_type_valyrian_tower_01_desc:0 "The towers of Valyria reflect the design paradigms of a world of Dragons. These large dominating towers enable the swift mounting of dragons to facilitate rapid movement within the city scape. When you are masters of the sky, why would you not look ever upwards." 
+   building_valyrian_tower_01:0 "$building_type_valyrian_tower_01$" 
+   building_valyrian_tower_01_desc:0 "$building_type_valyrian_tower_01_desc$" 
+
+   building_type_valyrian_tower_02:0 "$building_type_valyrian_tower_01$"
+   building_type_valyrian_tower_02_desc:0 "$building_type_valyrian_tower_01_desc$" 
+   building_valyrian_tower_02:0 "$building_valyrian_tower_01$" 
+   building_valyrian_tower_02_desc:0 "$building_valyrian_tower_01_desc$"
+
+   building_type_valyrian_tower_03:0 "$building_type_valyrian_tower_01$"
+   building_type_valyrian_tower_03_desc:0 "$building_type_valyrian_tower_01_desc$" 
+   building_valyrian_tower_03:0 "$building_valyrian_tower_01$" 
+   building_valyrian_tower_03_desc:0 "$building_valyrian_tower_01_desc$"
+
+   building_type_valyrian_tower_04:0 "$building_type_valyrian_tower_01$"
+   building_type_valyrian_tower_04_desc:0 "$building_type_valyrian_tower_01_desc$" 
+   building_valyrian_tower_04:0 "$building_valyrian_tower_01$" 
+   building_valyrian_tower_04_desc:0 "$building_valyrian_tower_01_desc$"
+
+   building_type_valyrian_tower_05:0 "$building_type_valyrian_tower_01$"
+   building_type_valyrian_tower_05_desc:0 "$building_type_valyrian_tower_01_desc$" 
+   building_valyrian_tower_05:0 "$building_valyrian_tower_01$" 
+   building_valyrian_tower_05_desc:0 "$building_valyrian_tower_01_desc$"
+
+   building_type_valyrian_tower_06:0 "$building_type_valyrian_tower_01$"
+   building_type_valyrian_tower_06_desc:0 "$building_type_valyrian_tower_01_desc$" 
+   building_valyrian_tower_06:0 "$building_valyrian_tower_01$" 
+   building_valyrian_tower_06_desc:0 "$building_valyrian_tower_01_desc$"
+ 
+   building_type_valyrian_tower_07:0 "$building_type_valyrian_tower_01$"
+   building_type_valyrian_tower_07_desc:0 "$building_type_valyrian_tower_01_desc$" 
+   building_valyrian_tower_07:0 "$building_valyrian_tower_01$" 
+   building_valyrian_tower_07_desc:0 "$building_valyrian_tower_01_desc$"
+   
+   building_type_valyrian_tower_08:0 "$building_type_valyrian_tower_01$"
+   building_type_valyrian_tower_08_desc:0 "$building_type_valyrian_tower_01_desc$" 
+   building_valyrian_tower_08:0 "$building_valyrian_tower_01$" 
+   building_valyrian_tower_08_desc:0 "$building_valyrian_tower_01_desc$"
+
+
    great_project_type_construct_mages_spire:0 "Construct Mage's Tower"
 
    great_project_type_construct_mages_spire_desc:0 "A mighty tower that rises up towards the sky. Our magical might is freely demonstrated by its many rows of books, and the crackling magical wards that glow in a purple hue in the setting son. This tower will rapidly become an economic hub in surrounding cities, while providing great benefits to our magical capabilities."
@@ -495,5 +494,42 @@
    great_project_type_construct_mages_spire_contribution_magical_material: "Magical Materials"
    great_project_type_construct_mages_spire_contribution_work_force: "Workforce"
    great_project_type_construct_mages_spire_contribution_acolytes: "Acolytes"
+   great_project_type_construct_mages_spire_does_not_already_have_mages_spire: "Does not already have a [GetBuilding('celestial_great_barracks_01').GetName] [building|E]"
+
+   building_type_zz_mages_tower_tower_01:0 "Mage's Tower"
+   building_type_zz_mages_tower_tower_01_desc:0 "A mighty tower, reaching far into the heavens, filled with acolytes and apprentices singing their sorcerous chants, generating arcane energies that crackle and burn."
+   building_zz_mages_tower_tower_01:0 "$building_type_zz_mages_tower_tower_01$"
+   building_zz_mages_tower_tower_01_desc:0 "$building_type_zz_mages_tower_tower_01_desc$"
+
+
+
+
+   great_project_type_construct_valyrian_roads:0 "Construct Blackstone Roads"
+
+   great_project_type_construct_valyrian_roads_desc:0 "An imposing network of fused blackstone, that snakes through a province. These imposing structures of the lost Freehold drink up the light of the sun, forming a latice-work of patterns throughout the realm. Beyond faciltiating the trade of the Freehold, this fusion of obisidian and dragonflame may hide other, more esoteric purposes."
+   great_project_type_construct_valyrian_roads_contribution_base_materials: "Construction Materials"
+   great_project_type_construct_valyrian_roads_contribution_magical_material: "Magical Materials"
+   great_project_type_construct_valyrian_roads_contribution_work_force: "Workforce"
+   great_project_type_construct_valyrian_roads_contribution_assign_a_dragon: "Assign a Dragon"
+
+
+   building_type_valyrian_roads_01:0 "Blackstone Roads"
+   building_type_valyrian_roads_01_desc:0 "The Blackstone roads of the Freehold are a ubiquitous example of the Freehold's famous fused stone method of construction. These roads provide almost unmatched durability, and some suggest that they may serve a kind of occultic purpose." 
+   building_valyrian_roads_01:0 "$building_type_valyrian_roads_01$" 
+   building_valyrian_roads_01_desc:0 "$building_type_valyrian_roads_01_desc$" 
+
+
+   great_project_type_construct_valyrian_walls:0 "Construct Blackstone Walls"
+
+   great_project_type_construct_valyrian_walls_desc:0 "An imposing bulwark of fused blackstone, carved from twisted magics and the might of dragon flame, these walls of Valyrian construction promise to render a location next to impervious to weapons of mortal make. Only by bringing the subjects within to despair should one hope to bring these Bastions to heel."
+   great_project_type_construct_valyrian_walls_contribution_base_materials: "Construction Materials"
+   great_project_type_construct_valyrian_walls_contribution_magical_material: "Magical Materials"
+   great_project_type_construct_valyrian_walls_contribution_work_force: "Workforce"
+   great_project_type_construct_valyrian_walls_contribution_assign_a_dragon: "Assign a Dragon"
+
+   building_type_valyrian_walls_01:0 "Blackstone Walls"
+   building_type_valyrian_walls_01_desc:0 "The Blackstone walls of the Freehold are imposing structures of Imperial majesty. Born from unholy magics and the sheer fury of dragonfire, these walls of fused blackstone are imperishable to all the mortal arts of war." 
+   building_valyrian_walls_01:0 "$building_type_valyrian_walls_01$" 
+   building_valyrian_walls_01_desc:0 "$building_type_valyrian_walls_01_desc$" 
 
 #"Our military might can be displayed through the construction of a great fortress that accommodates innumerable soldiers. Military commanders will be able to recruit more troops and large garrisons, which in turn will greatly benefit the area's defensive strength."

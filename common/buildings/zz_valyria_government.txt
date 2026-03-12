@@ -38,7 +38,7 @@
 	flag = zz_mages_tower_tower_01
 	type = great_building
 }
-valyrian_roads = {
+valyrian_roads_01 = {
 	construction_time = slow_construction_time
 
 	type_icon = "zz_vayrian_roads.dds"
@@ -60,6 +60,37 @@ valyrian_roads = {
 	county_holding_modifier = {
 		holding = city_holding
 		income_mult = 0.1
+	}
+	character_modifier = {
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+
+}
+valyrian_walls_01 = {
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_theodosian_walls.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		scope:holder = {
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		tax_mult = 0.30
+		fort_level = 4
+	}
+	county_holding_modifier = {
 	}
 	character_modifier = {
 	}

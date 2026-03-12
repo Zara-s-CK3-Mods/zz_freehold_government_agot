@@ -50,7 +50,7 @@
 		}
 	}
 
-	base_external_slots = 2
+	base_external_slots = 4
 
 	domicile_building_slots = {
 		external_slot_1 = {
@@ -663,6 +663,210 @@
 
 		external_slot_6 = {
 			position = { 43% 52% }
+			size = { 15% 30% }
+
+			empty_slot_asset = {
+				trigger = {
+					domicile_location = {
+						OR = {
+							#AGOT Modified
+							#terrain = jungle
+							#terrain = wetlands
+							#terrain = floodplains
+							agot_is_jungle_terrain = yes
+							agot_is_wetlands_terrain = yes
+							agot_is_floodplains_terrain = yes
+							agot_is_the_bog_terrain = yes
+						}
+					}
+				}
+				icon = "gfx/interface/icons/flat_icons/plus.dds"
+				texture = "gfx/interface/window_domiciles/estate_jungle_empty.dds"
+				intersectionmask_texture = "gfx/interface/window_domiciles/estate_jungle_empty_mask.png"
+			}
+
+			empty_slot_asset = {
+				trigger = {
+					domicile_location = {
+						OR = {
+							#AGOT Modified
+							#terrain = drylands
+							#terrain = desert
+							#terrain = desert_mountains
+							#terrain = oasis
+							#terrain = steppe
+							agot_is_drylands_terrain = yes
+							agot_is_desert_terrain = yes
+							agot_is_desert_mountains_terrain = yes
+							agot_is_oasis_terrain = yes
+							agot_is_steppe_terrain = yes
+						}
+					}
+				}
+				icon = "gfx/interface/icons/flat_icons/plus.dds"
+				texture = "gfx/interface/window_domiciles/estate_drylands_empty_02.dds"
+				intersectionmask_texture = "gfx/interface/window_domiciles/estate_drylands_empty_02_mask.png"
+			}
+
+			empty_slot_asset = {
+				trigger = {
+					domicile_location = {
+						OR = {
+							#AGOT Modified
+							#terrain = mountains
+							#terrain = hills
+							agot_is_mountains_terrain = yes
+							agot_is_hills_terrain = yes
+							agot_is_canyon_terrain = yes
+							agot_is_highlands_terrain = yes
+							agot_is_taiga_bog_terrain = yes
+						}
+					}
+				}
+				icon = "gfx/interface/icons/flat_icons/plus.dds"
+				texture = "gfx/interface/window_domiciles/estate_rough_empty_05.dds"
+				intersectionmask_texture = "gfx/interface/window_domiciles/estate_rough_empty_05_mask.png"
+			}
+
+			empty_slot_asset = {
+				icon = "gfx/interface/icons/flat_icons/plus.dds"
+				texture = "gfx/interface/window_domiciles/estate_grassland_empty.dds"
+				intersectionmask_texture = "gfx/interface/window_domiciles/estate_grassland_empty_mask.png"
+			}
+
+
+			# Under Construction
+			construction_slot_asset = {
+				trigger = {
+					domicile_location.culture = {
+						has_graphical_mena_culture_group_trigger = yes
+					}
+				}
+				icon = "gfx/interface/icons/flat_icons/plus.dds"
+				texture = "gfx/interface/window_domiciles/estate_building_construction_mena.dds"
+				intersectionmask_texture = "gfx/interface/window_domiciles/estate_building_construction_mena_mask.png"
+			}
+			construction_slot_asset = {
+				trigger = {
+					domicile_location.culture = {
+						has_graphical_western_culture_group_trigger = yes
+					}
+				}
+				icon = "gfx/interface/icons/flat_icons/plus.dds"
+				texture = "gfx/interface/window_domiciles/estate_building_construction_western.dds"
+				intersectionmask_texture = "gfx/interface/window_domiciles/estate_building_construction_western_mask.png"
+			}
+			construction_slot_asset = {
+				icon = "gfx/interface/icons/flat_icons/plus.dds"
+				texture = "gfx/interface/window_domiciles/estate_building_construction_byzantine.dds"
+				intersectionmask_texture = "gfx/interface/window_domiciles/estate_building_construction_byzantine_mask.png"
+			}
+		}
+
+		external_slot_7 = {
+			position = { 53% 52% }
+			size = { 15% 30% }
+
+			empty_slot_asset = {
+				trigger = {
+					domicile_location = {
+						OR = {
+							#AGOT Modified
+							#terrain = jungle
+							#terrain = wetlands
+							#terrain = floodplains
+							agot_is_jungle_terrain = yes
+							agot_is_wetlands_terrain = yes
+							agot_is_floodplains_terrain = yes
+							agot_is_the_bog_terrain = yes
+						}
+					}
+				}
+				icon = "gfx/interface/icons/flat_icons/plus.dds"
+				texture = "gfx/interface/window_domiciles/estate_jungle_empty.dds"
+				intersectionmask_texture = "gfx/interface/window_domiciles/estate_jungle_empty_mask.png"
+			}
+
+			empty_slot_asset = {
+				trigger = {
+					domicile_location = {
+						OR = {
+							#AGOT Modified
+							#terrain = drylands
+							#terrain = desert
+							#terrain = desert_mountains
+							#terrain = oasis
+							#terrain = steppe
+							agot_is_drylands_terrain = yes
+							agot_is_desert_terrain = yes
+							agot_is_desert_mountains_terrain = yes
+							agot_is_oasis_terrain = yes
+							agot_is_steppe_terrain = yes
+						}
+					}
+				}
+				icon = "gfx/interface/icons/flat_icons/plus.dds"
+				texture = "gfx/interface/window_domiciles/estate_drylands_empty_02.dds"
+				intersectionmask_texture = "gfx/interface/window_domiciles/estate_drylands_empty_02_mask.png"
+			}
+
+			empty_slot_asset = {
+				trigger = {
+					domicile_location = {
+						OR = {
+							#AGOT Modified
+							#terrain = mountains
+							#terrain = hills
+							agot_is_mountains_terrain = yes
+							agot_is_hills_terrain = yes
+							agot_is_canyon_terrain = yes
+							agot_is_highlands_terrain = yes
+							agot_is_taiga_bog_terrain = yes
+						}
+					}
+				}
+				icon = "gfx/interface/icons/flat_icons/plus.dds"
+				texture = "gfx/interface/window_domiciles/estate_rough_empty_05.dds"
+				intersectionmask_texture = "gfx/interface/window_domiciles/estate_rough_empty_05_mask.png"
+			}
+
+			empty_slot_asset = {
+				icon = "gfx/interface/icons/flat_icons/plus.dds"
+				texture = "gfx/interface/window_domiciles/estate_grassland_empty.dds"
+				intersectionmask_texture = "gfx/interface/window_domiciles/estate_grassland_empty_mask.png"
+			}
+
+
+			# Under Construction
+			construction_slot_asset = {
+				trigger = {
+					domicile_location.culture = {
+						has_graphical_mena_culture_group_trigger = yes
+					}
+				}
+				icon = "gfx/interface/icons/flat_icons/plus.dds"
+				texture = "gfx/interface/window_domiciles/estate_building_construction_mena.dds"
+				intersectionmask_texture = "gfx/interface/window_domiciles/estate_building_construction_mena_mask.png"
+			}
+			construction_slot_asset = {
+				trigger = {
+					domicile_location.culture = {
+						has_graphical_western_culture_group_trigger = yes
+					}
+				}
+				icon = "gfx/interface/icons/flat_icons/plus.dds"
+				texture = "gfx/interface/window_domiciles/estate_building_construction_western.dds"
+				intersectionmask_texture = "gfx/interface/window_domiciles/estate_building_construction_western_mask.png"
+			}
+			construction_slot_asset = {
+				icon = "gfx/interface/icons/flat_icons/plus.dds"
+				texture = "gfx/interface/window_domiciles/estate_building_construction_byzantine.dds"
+				intersectionmask_texture = "gfx/interface/window_domiciles/estate_building_construction_byzantine_mask.png"
+			}
+		}
+
+		external_slot_8 = {
+			position = { 63% 52% }
 			size = { 15% 30% }
 
 			empty_slot_asset = {
