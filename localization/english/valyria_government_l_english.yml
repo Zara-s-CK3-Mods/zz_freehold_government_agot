@@ -518,6 +518,11 @@
    building_valyrian_roads_01:0 "$building_type_valyrian_roads_01$" 
    building_valyrian_roads_01_desc:0 "$building_type_valyrian_roads_01_desc$" 
 
+   building_type_valyrian_roads_02:0 "$building_type_valyrian_roads_01"
+   building_type_valyrian_roads_02_desc:0 "$building_type_valyrian_roads_01_desc$"  
+   building_valyrian_roads_01:0 "$building_type_valyrian_roads_02$" 
+   building_valyrian_roads_02_desc:0 "$building_type_valyrian_roads_02_desc$" 
+
 
    great_project_type_construct_valyrian_walls:0 "Construct Blackstone Walls"
 
