@@ -399,3 +399,1328 @@ valyrian_tower_08 = {
 	}
 
 }
+
+valyrian_tower_I_01 = {
+	construction_time = slow_construction_time
+
+	type_icon = "zz_vayrian_spires.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		scope:holder = {
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_3
+	}
+
+	character_modifier = {
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	next_building = valyrian_tower_I_02
+
+}
+valyrian_tower_I_02 = {
+	construction_time = slow_construction_time
+
+	type_icon = "zz_vayrian_spires.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		scope:holder = {
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_4
+	}
+
+	character_modifier = {
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	next_building = valyrian_tower_I_03
+
+}
+valyrian_tower_I_03 = {
+	construction_time = slow_construction_time
+
+	type_icon = "zz_vayrian_spires.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		scope:holder = {
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_5
+	}
+
+	character_modifier = {
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	next_building = valyrian_tower_I_04
+
+}
+valyrian_tower_I_04 = {
+	construction_time = slow_construction_time
+
+	type_icon = "zz_vayrian_spires.dds"
+
+	cost_gold = 1500
+	can_construct = {
+	
+		scope:holder = {
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_6
+	}
+	
+
+	character_modifier = {
+	}
+	character_culture_modifier = {
+		parameter = dragon_dreams_more_common
+		men_at_arms_limit = 1
+		men_at_arms_title_limit = 1
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	next_building = valyrian_tower_I_05
+
+}
+valyrian_tower_I_05 = {
+	construction_time = slow_construction_time
+
+	type_icon = "zz_vayrian_spires.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		scope:holder = {
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_7
+	}
+
+	character_modifier = {
+	}
+	character_culture_modifier = {
+		parameter = dragon_dreams_more_common
+		men_at_arms_limit = 1
+		men_at_arms_title_limit = 1
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	next_building = valyrian_tower_I_06
+}
+valyrian_tower_I_06 = {
+	construction_time = slow_construction_time
+
+	type_icon = "zz_vayrian_spires.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		scope:holder = {
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_8
+	}
+
+	character_modifier = {
+	}
+	character_culture_modifier = {
+		parameter = dragon_dreams_more_common
+		men_at_arms_limit = 2
+		men_at_arms_title_limit = 2
+	}
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	next_building = valyrian_tower_I_07
+}
+valyrian_tower_I_07 = {
+	construction_time = slow_construction_time
+
+	type_icon = "zz_vayrian_spires.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		scope:holder = {
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_9
+	}
+
+	character_modifier = {
+		
+	}
+	character_culture_modifier = {
+		parameter = dragon_dreams_more_common
+		men_at_arms_limit = 2
+		men_at_arms_title_limit = 2
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	next_building = valyrian_tower_I_08
+}
+valyrian_tower_I_08 = {
+	construction_time = slow_construction_time
+
+	type_icon = "zz_vayrian_spires.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		scope:holder = {
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_10
+	}
+
+	character_modifier = {
+	}
+	character_culture_modifier = {
+		parameter = dragon_dreams_more_common
+		men_at_arms_limit = 3
+		men_at_arms_title_limit = 3
+		men_at_arms_title_cap = 1
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+
+}
+
+valyrian_tower_II_01 = {
+	construction_time = slow_construction_time
+
+	type_icon = "zz_vayrian_spires.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		scope:holder = {
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_3
+	}
+
+	character_modifier = {
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	next_building = valyrian_tower_II_02
+
+}
+valyrian_tower_II_02 = {
+	construction_time = slow_construction_time
+
+	type_icon = "zz_vayrian_spires.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		scope:holder = {
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_4
+	}
+
+	character_modifier = {
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	next_building = valyrian_tower_II_03
+
+}
+valyrian_tower_II_03 = {
+	construction_time = slow_construction_time
+
+	type_icon = "zz_vayrian_spires.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		scope:holder = {
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_5
+	}
+
+	character_modifier = {
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	next_building = valyrian_tower_II_04
+
+}
+valyrian_tower_II_04 = {
+	construction_time = slow_construction_time
+
+	type_icon = "zz_vayrian_spires.dds"
+
+	cost_gold = 1500
+	can_construct = {
+	
+		scope:holder = {
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_6
+	}
+	
+
+	character_modifier = {
+	}
+	character_culture_modifier = {
+		parameter = dragon_dreams_more_common
+		men_at_arms_limit = 1
+		men_at_arms_title_limit = 1
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	next_building = valyrian_tower_II_05
+
+}
+valyrian_tower_II_05 = {
+	construction_time = slow_construction_time
+
+	type_icon = "zz_vayrian_spires.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		scope:holder = {
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_7
+	}
+
+	character_modifier = {
+	}
+	character_culture_modifier = {
+		parameter = dragon_dreams_more_common
+		men_at_arms_limit = 1
+		men_at_arms_title_limit = 1
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	next_building = valyrian_tower_II_06
+}
+valyrian_tower_II_06 = {
+	construction_time = slow_construction_time
+
+	type_icon = "zz_vayrian_spires.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		scope:holder = {
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_8
+	}
+
+	character_modifier = {
+	}
+	character_culture_modifier = {
+		parameter = dragon_dreams_more_common
+		men_at_arms_limit = 2
+		men_at_arms_title_limit = 2
+	}
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	next_building = valyrian_tower_II_07
+}
+valyrian_tower_II_07 = {
+	construction_time = slow_construction_time
+
+	type_icon = "zz_vayrian_spires.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		scope:holder = {
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_9
+	}
+
+	character_modifier = {
+		
+	}
+	character_culture_modifier = {
+		parameter = dragon_dreams_more_common
+		men_at_arms_limit = 2
+		men_at_arms_title_limit = 2
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	next_building = valyrian_tower_II_08
+}
+valyrian_tower_II_08 = {
+	construction_time = slow_construction_time
+
+	type_icon = "zz_vayrian_spires.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		scope:holder = {
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_10
+	}
+
+	character_modifier = {
+	}
+	character_culture_modifier = {
+		parameter = dragon_dreams_more_common
+		men_at_arms_limit = 3
+		men_at_arms_title_limit = 3
+		men_at_arms_title_cap = 1
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+
+}
+
+valyrian_tower_III_01 = {
+	construction_time = slow_construction_time
+
+	type_icon = "zz_vayrian_spires.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		scope:holder = {
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_3
+	}
+
+	character_modifier = {
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	next_building = valyrian_tower_III_02
+
+}
+valyrian_tower_III_02 = {
+	construction_time = slow_construction_time
+
+	type_icon = "zz_vayrian_spires.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		scope:holder = {
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_4
+	}
+
+	character_modifier = {
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	next_building = valyrian_tower_III_03
+
+}
+valyrian_tower_III_03 = {
+	construction_time = slow_construction_time
+
+	type_icon = "zz_vayrian_spires.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		scope:holder = {
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_5
+	}
+
+	character_modifier = {
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	next_building = valyrian_tower_III_04
+
+}
+valyrian_tower_III_04 = {
+	construction_time = slow_construction_time
+
+	type_icon = "zz_vayrian_spires.dds"
+
+	cost_gold = 1500
+	can_construct = {
+	
+		scope:holder = {
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_6
+	}
+	
+
+	character_modifier = {
+	}
+	character_culture_modifier = {
+		parameter = dragon_dreams_more_common
+		men_at_arms_limit = 1
+		men_at_arms_title_limit = 1
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	next_building = valyrian_tower_III_05
+
+}
+valyrian_tower_III_05 = {
+	construction_time = slow_construction_time
+
+	type_icon = "zz_vayrian_spires.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		scope:holder = {
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_7
+	}
+
+	character_modifier = {
+	}
+	character_culture_modifier = {
+		parameter = dragon_dreams_more_common
+		men_at_arms_limit = 1
+		men_at_arms_title_limit = 1
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	next_building = valyrian_tower_III_06
+}
+valyrian_tower_III_06 = {
+	construction_time = slow_construction_time
+
+	type_icon = "zz_vayrian_spires.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		scope:holder = {
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_8
+	}
+
+	character_modifier = {
+	}
+	character_culture_modifier = {
+		parameter = dragon_dreams_more_common
+		men_at_arms_limit = 2
+		men_at_arms_title_limit = 2
+	}
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	next_building = valyrian_tower_III_07
+}
+valyrian_tower_III_07 = {
+	construction_time = slow_construction_time
+
+	type_icon = "zz_vayrian_spires.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		scope:holder = {
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_9
+	}
+
+	character_modifier = {
+		
+	}
+	character_culture_modifier = {
+		parameter = dragon_dreams_more_common
+		men_at_arms_limit = 2
+		men_at_arms_title_limit = 2
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	next_building = valyrian_tower_III_08
+}
+valyrian_tower_III_08 = {
+	construction_time = slow_construction_time
+
+	type_icon = "zz_vayrian_spires.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		scope:holder = {
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_10
+	}
+
+	character_modifier = {
+	}
+	character_culture_modifier = {
+		parameter = dragon_dreams_more_common
+		men_at_arms_limit = 3
+		men_at_arms_title_limit = 3
+		men_at_arms_title_cap = 1
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+
+}
+
+valyrian_tower_IV_01 = {
+	construction_time = slow_construction_time
+
+	type_icon = "zz_vayrian_spires.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		scope:holder = {
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_3
+	}
+
+	character_modifier = {
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	next_building = valyrian_tower_IV_02
+
+}
+valyrian_tower_IV_02 = {
+	construction_time = slow_construction_time
+
+	type_icon = "zz_vayrian_spires.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		scope:holder = {
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_4
+	}
+
+	character_modifier = {
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	next_building = valyrian_tower_IV_03
+
+}
+valyrian_tower_IV_03 = {
+	construction_time = slow_construction_time
+
+	type_icon = "zz_vayrian_spires.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		scope:holder = {
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_5
+	}
+
+	character_modifier = {
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	next_building = valyrian_tower_IV_04
+
+}
+valyrian_tower_IV_04 = {
+	construction_time = slow_construction_time
+
+	type_icon = "zz_vayrian_spires.dds"
+
+	cost_gold = 1500
+	can_construct = {
+	
+		scope:holder = {
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_6
+	}
+	
+
+	character_modifier = {
+	}
+	character_culture_modifier = {
+		parameter = dragon_dreams_more_common
+		men_at_arms_limit = 1
+		men_at_arms_title_limit = 1
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	next_building = valyrian_tower_IV_05
+
+}
+valyrian_tower_IV_05 = {
+	construction_time = slow_construction_time
+
+	type_icon = "zz_vayrian_spires.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		scope:holder = {
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_7
+	}
+
+	character_modifier = {
+	}
+	character_culture_modifier = {
+		parameter = dragon_dreams_more_common
+		men_at_arms_limit = 1
+		men_at_arms_title_limit = 1
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	next_building = valyrian_tower_IV_06
+}
+valyrian_tower_IV_06 = {
+	construction_time = slow_construction_time
+
+	type_icon = "zz_vayrian_spires.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		scope:holder = {
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_8
+	}
+
+	character_modifier = {
+	}
+	character_culture_modifier = {
+		parameter = dragon_dreams_more_common
+		men_at_arms_limit = 2
+		men_at_arms_title_limit = 2
+	}
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	next_building = valyrian_tower_IV_07
+}
+valyrian_tower_IV_07 = {
+	construction_time = slow_construction_time
+
+	type_icon = "zz_vayrian_spires.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		scope:holder = {
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_9
+	}
+
+	character_modifier = {
+		
+	}
+	character_culture_modifier = {
+		parameter = dragon_dreams_more_common
+		men_at_arms_limit = 2
+		men_at_arms_title_limit = 2
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	next_building = valyrian_tower_IV_08
+}
+valyrian_tower_IV_08 = {
+	construction_time = slow_construction_time
+
+	type_icon = "zz_vayrian_spires.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		scope:holder = {
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_10
+	}
+
+	character_modifier = {
+	}
+	character_culture_modifier = {
+		parameter = dragon_dreams_more_common
+		men_at_arms_limit = 3
+		men_at_arms_title_limit = 3
+		men_at_arms_title_cap = 1
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+
+}
+
+valyrian_tower_V_01 = {
+	construction_time = slow_construction_time
+
+	type_icon = "zz_vayrian_spires.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		scope:holder = {
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_3
+	}
+
+	character_modifier = {
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	next_building = valyrian_tower_V_02
+
+}
+valyrian_tower_V_02 = {
+	construction_time = slow_construction_time
+
+	type_icon = "zz_vayrian_spires.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		scope:holder = {
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_4
+	}
+
+	character_modifier = {
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	next_building = valyrian_tower_V_03
+
+}
+valyrian_tower_V_03 = {
+	construction_time = slow_construction_time
+
+	type_icon = "zz_vayrian_spires.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		scope:holder = {
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_5
+	}
+
+	character_modifier = {
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	next_building = valyrian_tower_V_04
+
+}
+valyrian_tower_V_04 = {
+	construction_time = slow_construction_time
+
+	type_icon = "zz_vayrian_spires.dds"
+
+	cost_gold = 1500
+	can_construct = {
+	
+		scope:holder = {
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_6
+	}
+	
+
+	character_modifier = {
+	}
+	character_culture_modifier = {
+		parameter = dragon_dreams_more_common
+		men_at_arms_limit = 1
+		men_at_arms_title_limit = 1
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	next_building = valyrian_tower_V_05
+
+}
+valyrian_tower_V_05 = {
+	construction_time = slow_construction_time
+
+	type_icon = "zz_vayrian_spires.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		scope:holder = {
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_7
+	}
+
+	character_modifier = {
+	}
+	character_culture_modifier = {
+		parameter = dragon_dreams_more_common
+		men_at_arms_limit = 1
+		men_at_arms_title_limit = 1
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	next_building = valyrian_tower_V_06
+}
+valyrian_tower_V_06 = {
+	construction_time = slow_construction_time
+
+	type_icon = "zz_vayrian_spires.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		scope:holder = {
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_8
+	}
+
+	character_modifier = {
+	}
+	character_culture_modifier = {
+		parameter = dragon_dreams_more_common
+		men_at_arms_limit = 2
+		men_at_arms_title_limit = 2
+	}
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	next_building = valyrian_tower_V_07
+}
+valyrian_tower_V_07 = {
+	construction_time = slow_construction_time
+
+	type_icon = "zz_vayrian_spires.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		scope:holder = {
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_9
+	}
+
+	character_modifier = {
+		
+	}
+	character_culture_modifier = {
+		parameter = dragon_dreams_more_common
+		men_at_arms_limit = 2
+		men_at_arms_title_limit = 2
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+	next_building = valyrian_tower_V_08
+}
+valyrian_tower_V_08 = {
+	construction_time = slow_construction_time
+
+	type_icon = "zz_vayrian_spires.dds"
+
+	cost_gold = 1500
+	can_construct = {
+		scope:holder = {
+			government_has_flag = government_is_freehold
+		}
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_special_AGOT_Tyrosh_BT_mesh"
+	}
+
+	province_modifier = {
+		monthly_income = valyrian_building_tax_tier_10
+	}
+
+	character_modifier = {
+	}
+	character_culture_modifier = {
+		parameter = dragon_dreams_more_common
+		men_at_arms_limit = 3
+		men_at_arms_title_limit = 3
+		men_at_arms_title_cap = 1
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+
+}

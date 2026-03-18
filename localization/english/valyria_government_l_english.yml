@@ -444,7 +444,13 @@
    freehold_wartime_measures_desc:0 "$wartime_measures_desc$"
    freehold_wartime_measures_desc_title:0 "$wartime_measures_desc_title$"
 
+   great_project_type_construct_valyrian_towerss:0 "Construct Valyrian Spires"
 
+   great_project_type_construct_valyrian_towers_desc:0 "An imposing structure of fused black stone with a jagged top. These spires dot the freehold as mighty imposing reminders of the power of the Valyrians. These towers are centres of commerce and administration."
+   great_project_type_construct_valyrian_towers_contribution_base_materials: "Construction Materials"
+   great_project_type_construct_valyrian_towers_contribution_magical_material: "Magical Materials"
+   great_project_type_construct_valyrian_towers_contribution_work_force: "Workforce"
+   great_project_type_construct_valyrian_towers_contribution_assign_a_dragon: "Assign a Dragon"
 
    building_type_valyrian_tower_01:0 "Valyrian Spires"
    building_type_valyrian_tower_01_desc:0 "The towers of Valyria reflect the design paradigms of a world of Dragons. These large dominating towers enable the swift mounting of dragons to facilitate rapid movement within the city scape. When you are masters of the sky, why would you not look ever upwards." 
@@ -485,6 +491,210 @@
    building_type_valyrian_tower_08_desc:0 "$building_type_valyrian_tower_01_desc$" 
    building_valyrian_tower_08:0 "$building_valyrian_tower_01$" 
    building_valyrian_tower_08_desc:0 "$building_valyrian_tower_01_desc$"
+
+
+   building_type_valyrian_tower_I_01:0 "Valyrian Spires"
+   building_type_valyrian_tower_I_01_desc:0 "The towers of Valyria reflect the design paradigms of a world of Dragons. These large dominating towers enable the swift mounting of dragons to facilitate rapid movement within the city scape. When you are masters of the sky, why would you not look ever upwards." 
+   building_valyrian_tower_I_01:0 "$building_type_valyrian_tower_I_01$" 
+   building_valyrian_tower_I_01_desc:0 "$building_type_valyrian_tower_I_01_desc$" 
+
+   building_type_valyrian_tower_I_02:0 "$building_type_valyrian_tower_I_01$"
+   building_type_valyrian_tower_I_02_desc:0 "$building_type_valyrian_tower_I_01_desc$" 
+   building_valyrian_tower_I_02:0 "$building_valyrian_tower_I_01$" 
+   building_valyrian_tower_I_02_desc:0 "$building_valyrian_tower_I_01_desc$"
+
+   building_type_valyrian_tower_I_03:0 "$building_type_valyrian_tower_I_01$"
+   building_type_valyrian_tower_I_03_desc:0 "$building_type_valyrian_tower_I_01_desc$" 
+   building_valyrian_tower_I_03:0 "$building_valyrian_tower_I_01$" 
+   building_valyrian_tower_I_03_desc:0 "$building_valyrian_tower_I_01_desc$"
+
+   building_type_valyrian_tower_I_04:0 "$building_type_valyrian_tower_I_01$"
+   building_type_valyrian_tower_I_04_desc:0 "$building_type_valyrian_tower_I_01_desc$" 
+   building_valyrian_tower_I_04:0 "$building_valyrian_tower_I_01$" 
+   building_valyrian_tower_I_04_desc:0 "$building_valyrian_tower_I_01_desc$"
+
+   building_type_valyrian_tower_I_05:0 "$building_type_valyrian_tower_I_01$"
+   building_type_valyrian_tower_I_05_desc:0 "$building_type_valyrian_tower_I_01_desc$" 
+   building_valyrian_tower_I_05:0 "$building_valyrian_tower_I_01$" 
+   building_valyrian_tower_I_05_desc:0 "$building_valyrian_tower_I_01_desc$"
+
+   building_type_valyrian_tower_I_06:0 "$building_type_valyrian_tower_I_01$"
+   building_type_valyrian_tower_I_06_desc:0 "$building_type_valyrian_tower_I_01_desc$" 
+   building_valyrian_tower_I_06:0 "$building_valyrian_tower_I_01$" 
+   building_valyrian_tower_I_06_desc:0 "$building_valyrian_tower_I_01_desc$"
+ 
+   building_type_valyrian_tower_I_07:0 "$building_type_valyrian_tower_I_01$"
+   building_type_valyrian_tower_I_07_desc:0 "$building_type_valyrian_tower_I_01_desc$" 
+   building_valyrian_tower_I_07:0 "$building_valyrian_tower_I_01$" 
+   building_valyrian_tower_I_07_desc:0 "$building_valyrian_tower_I_01_desc$"
+   
+   building_type_valyrian_tower_I_08:0 "$building_type_valyrian_tower_I_01$"
+   building_type_valyrian_tower_I_08_desc:0 "$building_type_valyrian_tower_I_01_desc$" 
+   building_valyrian_tower_I_08:0 "$building_valyrian_tower_I_01$" 
+   building_valyrian_tower_I_08_desc:0 "$building_valyrian_tower_I_01_desc$"
+
+   building_type_valyrian_tower_II_01:0 "Valyrian Spires"
+   building_type_valyrian_tower_II_01_desc:0 "The towers of Valyria reflect the design paradigms of a world of Dragons. These large dominating towers enable the swift mounting of dragons to facilitate rapid movement within the city scape. When you are masters of the sky, why would you not look ever upwards." 
+   building_valyrian_tower_II_01:0 "$building_type_valyrian_tower_II_01$" 
+   building_valyrian_tower_II_01_desc:0 "$building_type_valyrian_tower_II_01_desc$" 
+
+   building_type_valyrian_tower_II_02:0 "$building_type_valyrian_tower_II_01$"
+   building_type_valyrian_tower_II_02_desc:0 "$building_type_valyrian_tower_II_01_desc$" 
+   building_valyrian_tower_II_02:0 "$building_valyrian_tower_II_01$" 
+   building_valyrian_tower_II_02_desc:0 "$building_valyrian_tower_II_01_desc$"
+
+   building_type_valyrian_tower_II_03:0 "$building_type_valyrian_tower_II_01$"
+   building_type_valyrian_tower_II_03_desc:0 "$building_type_valyrian_tower_II_01_desc$" 
+   building_valyrian_tower_II_03:0 "$building_valyrian_tower_II_01$" 
+   building_valyrian_tower_II_03_desc:0 "$building_valyrian_tower_II_01_desc$"
+
+   building_type_valyrian_tower_II_04:0 "$building_type_valyrian_tower_II_01$"
+   building_type_valyrian_tower_II_04_desc:0 "$building_type_valyrian_tower_II_01_desc$" 
+   building_valyrian_tower_II_04:0 "$building_valyrian_tower_II_01$" 
+   building_valyrian_tower_II_04_desc:0 "$building_valyrian_tower_II_01_desc$"
+
+   building_type_valyrian_tower_II_05:0 "$building_type_valyrian_tower_II_01$"
+   building_type_valyrian_tower_II_05_desc:0 "$building_type_valyrian_tower_II_01_desc$" 
+   building_valyrian_tower_II_05:0 "$building_valyrian_tower_II_01$" 
+   building_valyrian_tower_II_05_desc:0 "$building_valyrian_tower_II_01_desc$"
+
+   building_type_valyrian_tower_II_06:0 "$building_type_valyrian_tower_II_01$"
+   building_type_valyrian_tower_II_06_desc:0 "$building_type_valyrian_tower_II_01_desc$" 
+   building_valyrian_tower_II_06:0 "$building_valyrian_tower_II_01$" 
+   building_valyrian_tower_II_06_desc:0 "$building_valyrian_tower_II_01_desc$"
+ 
+   building_type_valyrian_tower_II_07:0 "$building_type_valyrian_tower_II_01$"
+   building_type_valyrian_tower_II_07_desc:0 "$building_type_valyrian_tower_II_01_desc$" 
+   building_valyrian_tower_II_07:0 "$building_valyrian_tower_II_01$" 
+   building_valyrian_tower_II_07_desc:0 "$building_valyrian_tower_II_01_desc$"
+   
+   building_type_valyrian_tower_II_08:0 "$building_type_valyrian_tower_II_01$"
+   building_type_valyrian_tower_II_08_desc:0 "$building_type_valyrian_tower_II_01_desc$" 
+   building_valyrian_tower_II_08:0 "$building_valyrian_tower_II_01$" 
+   building_valyrian_tower_II_08_desc:0 "$building_valyrian_tower_II_01_desc$"
+
+
+   building_type_valyrian_tower_III_01:0 "Valyrian Spires"
+   building_type_valyrian_tower_III_01_desc:0 "The towers of Valyria reflect the design paradigms of a world of Dragons. These large dominating towers enable the swift mounting of dragons to facilitate rapid movement within the city scape. When you are masters of the sky, why would you not look ever upwards." 
+   building_valyrian_tower_III_01:0 "$building_type_valyrian_tower_III_01$" 
+   building_valyrian_tower_III_01_desc:0 "$building_type_valyrian_tower_III_01_desc$" 
+
+   building_type_valyrian_tower_III_02:0 "$building_type_valyrian_tower_III_01$"
+   building_type_valyrian_tower_III_02_desc:0 "$building_type_valyrian_tower_III_01_desc$" 
+   building_valyrian_tower_III_02:0 "$building_valyrian_tower_III_01$" 
+   building_valyrian_tower_III_02_desc:0 "$building_valyrian_tower_III_01_desc$"
+
+   building_type_valyrian_tower_III_03:0 "$building_type_valyrian_tower_III_01$"
+   building_type_valyrian_tower_III_03_desc:0 "$building_type_valyrian_tower_III_01_desc$" 
+   building_valyrian_tower_III_03:0 "$building_valyrian_tower_III_01$" 
+   building_valyrian_tower_III_03_desc:0 "$building_valyrian_tower_III_01_desc$"
+
+   building_type_valyrian_tower_III_04:0 "$building_type_valyrian_tower_III_01$"
+   building_type_valyrian_tower_III_04_desc:0 "$building_type_valyrian_tower_III_01_desc$" 
+   building_valyrian_tower_III_04:0 "$building_valyrian_tower_III_01$" 
+   building_valyrian_tower_III_04_desc:0 "$building_valyrian_tower_III_01_desc$"
+
+   building_type_valyrian_tower_III_05:0 "$building_type_valyrian_tower_III_01$"
+   building_type_valyrian_tower_III_05_desc:0 "$building_type_valyrian_tower_III_01_desc$" 
+   building_valyrian_tower_III_05:0 "$building_valyrian_tower_III_01$" 
+   building_valyrian_tower_III_05_desc:0 "$building_valyrian_tower_III_01_desc$"
+
+   building_type_valyrian_tower_III_06:0 "$building_type_valyrian_tower_III_01$"
+   building_type_valyrian_tower_III_06_desc:0 "$building_type_valyrian_tower_III_01_desc$" 
+   building_valyrian_tower_III_06:0 "$building_valyrian_tower_III_01$" 
+   building_valyrian_tower_III_06_desc:0 "$building_valyrian_tower_III_01_desc$"
+ 
+   building_type_valyrian_tower_III_07:0 "$building_type_valyrian_tower_III_01$"
+   building_type_valyrian_tower_III_07_desc:0 "$building_type_valyrian_tower_III_01_desc$" 
+   building_valyrian_tower_III_07:0 "$building_valyrian_tower_III_01$" 
+   building_valyrian_tower_III_07_desc:0 "$building_valyrian_tower_III_01_desc$"
+   
+   building_type_valyrian_tower_III_08:0 "$building_type_valyrian_tower_III_01$"
+   building_type_valyrian_tower_III_08_desc:0 "$building_type_valyrian_tower_III_01_desc$" 
+   building_valyrian_tower_III_08:0 "$building_valyrian_tower_III_01$" 
+   building_valyrian_tower_III_08_desc:0 "$building_valyrian_tower_III_01_desc$"
+
+
+   building_type_valyrian_tower_IV_01:0 "Valyrian Spires"
+   building_type_valyrian_tower_IV_01_desc:0 "The towers of Valyria reflect the design paradigms of a world of Dragons. These large dominating towers enable the swift mounting of dragons to facilitate rapid movement within the city scape. When you are masters of the sky, why would you not look ever upwards." 
+   building_valyrian_tower_IV_01:0 "$building_type_valyrian_tower_IV_01$" 
+   building_valyrian_tower_IV_01_desc:0 "$building_type_valyrian_tower_IV_01_desc$" 
+
+   building_type_valyrian_tower_IV_02:0 "$building_type_valyrian_tower_IV_01$"
+   building_type_valyrian_tower_IV_02_desc:0 "$building_type_valyrian_tower_IV_01_desc$" 
+   building_valyrian_tower_IV_02:0 "$building_valyrian_tower_IV_01$" 
+   building_valyrian_tower_IV_02_desc:0 "$building_valyrian_tower_IV_01_desc$"
+
+   building_type_valyrian_tower_IV_03:0 "$building_type_valyrian_tower_IV_01$"
+   building_type_valyrian_tower_IV_03_desc:0 "$building_type_valyrian_tower_IV_01_desc$" 
+   building_valyrian_tower_IV_03:0 "$building_valyrian_tower_IV_01$" 
+   building_valyrian_tower_IV_03_desc:0 "$building_valyrian_tower_IV_01_desc$"
+
+   building_type_valyrian_tower_IV_04:0 "$building_type_valyrian_tower_IV_01$"
+   building_type_valyrian_tower_IV_04_desc:0 "$building_type_valyrian_tower_IV_01_desc$" 
+   building_valyrian_tower_IV_04:0 "$building_valyrian_tower_IV_01$" 
+   building_valyrian_tower_IV_04_desc:0 "$building_valyrian_tower_IV_01_desc$"
+
+   building_type_valyrian_tower_IV_05:0 "$building_type_valyrian_tower_IV_01$"
+   building_type_valyrian_tower_IV_05_desc:0 "$building_type_valyrian_tower_IV_01_desc$" 
+   building_valyrian_tower_IV_05:0 "$building_valyrian_tower_IV_01$" 
+   building_valyrian_tower_IV_05_desc:0 "$building_valyrian_tower_IV_01_desc$"
+
+   building_type_valyrian_tower_IV_06:0 "$building_type_valyrian_tower_IV_01$"
+   building_type_valyrian_tower_IV_06_desc:0 "$building_type_valyrian_tower_IV_01_desc$" 
+   building_valyrian_tower_IV_06:0 "$building_valyrian_tower_IV_01$" 
+   building_valyrian_tower_IV_06_desc:0 "$building_valyrian_tower_IV_01_desc$"
+ 
+   building_type_valyrian_tower_IV_07:0 "$building_type_valyrian_tower_IV_01$"
+   building_type_valyrian_tower_IV_07_desc:0 "$building_type_valyrian_tower_IV_01_desc$" 
+   building_valyrian_tower_IV_07:0 "$building_valyrian_tower_IV_01$" 
+   building_valyrian_tower_IV_07_desc:0 "$building_valyrian_tower_IV_01_desc$"
+   
+   building_type_valyrian_tower_IV_08:0 "$building_type_valyrian_tower_IV_01$"
+   building_type_valyrian_tower_IV_08_desc:0 "$building_type_valyrian_tower_IV_01_desc$" 
+   building_valyrian_tower_IV_08:0 "$building_valyrian_tower_IV_01$" 
+   building_valyrian_tower_IV_08_desc:0 "$building_valyrian_tower_IV_01_desc$"
+
+
+   building_type_valyrian_tower_V_01:0 "Valyrian Spires"
+   building_type_valyrian_tower_V_01_desc:0 "The towers of Valyria reflect the design paradigms of a world of Dragons. These large dominating towers enable the swift mounting of dragons to facilitate rapid movement within the city scape. When you are masters of the sky, why would you not look ever upwards." 
+   building_valyrian_tower_V_01:0 "$building_type_valyrian_tower_V_01$" 
+   building_valyrian_tower_V_01_desc:0 "$building_type_valyrian_tower_V_01_desc$" 
+
+   building_type_valyrian_tower_V_02:0 "$building_type_valyrian_tower_V_01$"
+   building_type_valyrian_tower_V_02_desc:0 "$building_type_valyrian_tower_V_01_desc$" 
+   building_valyrian_tower_V_02:0 "$building_valyrian_tower_V_01$" 
+   building_valyrian_tower_V_02_desc:0 "$building_valyrian_tower_V_01_desc$"
+
+   building_type_valyrian_tower_V_03:0 "$building_type_valyrian_tower_V_01$"
+   building_type_valyrian_tower_V_03_desc:0 "$building_type_valyrian_tower_V_01_desc$" 
+   building_valyrian_tower_V_03:0 "$building_valyrian_tower_V_01$" 
+   building_valyrian_tower_V_03_desc:0 "$building_valyrian_tower_V_01_desc$"
+
+   building_type_valyrian_tower_V_04:0 "$building_type_valyrian_tower_V_01$"
+   building_type_valyrian_tower_V_04_desc:0 "$building_type_valyrian_tower_V_01_desc$" 
+   building_valyrian_tower_V_04:0 "$building_valyrian_tower_V_01$" 
+   building_valyrian_tower_V_04_desc:0 "$building_valyrian_tower_V_01_desc$"
+
+   building_type_valyrian_tower_V_05:0 "$building_type_valyrian_tower_V_01$"
+   building_type_valyrian_tower_V_05_desc:0 "$building_type_valyrian_tower_V_01_desc$" 
+   building_valyrian_tower_V_05:0 "$building_valyrian_tower_V_01$" 
+   building_valyrian_tower_V_05_desc:0 "$building_valyrian_tower_V_01_desc$"
+
+   building_type_valyrian_tower_V_06:0 "$building_type_valyrian_tower_V_01$"
+   building_type_valyrian_tower_V_06_desc:0 "$building_type_valyrian_tower_V_01_desc$" 
+   building_valyrian_tower_V_06:0 "$building_valyrian_tower_V_01$" 
+   building_valyrian_tower_V_06_desc:0 "$building_valyrian_tower_V_01_desc$"
+ 
+   building_type_valyrian_tower_V_07:0 "$building_type_valyrian_tower_V_01$"
+   building_type_valyrian_tower_V_07_desc:0 "$building_type_valyrian_tower_V_01_desc$" 
+   building_valyrian_tower_V_07:0 "$building_valyrian_tower_V_01$" 
+   building_valyrian_tower_V_07_desc:0 "$building_valyrian_tower_V_01_desc$"
+   
+   building_type_valyrian_tower_V_08:0 "$building_type_valyrian_tower_V_01$"
+   building_type_valyrian_tower_V_08_desc:0 "$building_type_valyrian_tower_V_01_desc$" 
+   building_valyrian_tower_V_08:0 "$building_valyrian_tower_V_01$" 
+   building_valyrian_tower_V_08_desc:0 "$building_valyrian_tower_V_01_desc$"
 
 
    great_project_type_construct_mages_spire:0 "Construct Mage's Tower"
