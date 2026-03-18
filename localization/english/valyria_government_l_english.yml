@@ -444,7 +444,7 @@
    freehold_wartime_measures_desc:0 "$wartime_measures_desc$"
    freehold_wartime_measures_desc_title:0 "$wartime_measures_desc_title$"
 
-   great_project_type_construct_valyrian_towerss:0 "Construct Valyrian Spires"
+   great_project_type_construct_valyrian_towers:0 "Construct Valyrian Spires"
 
    great_project_type_construct_valyrian_towers_desc:0 "An imposing structure of fused black stone with a jagged top. These spires dot the freehold as mighty imposing reminders of the power of the Valyrians. These towers are centres of commerce and administration."
    great_project_type_construct_valyrian_towers_contribution_base_materials: "Construction Materials"
@@ -730,7 +730,7 @@
 
    building_type_valyrian_roads_02:0 "$building_type_valyrian_roads_01"
    building_type_valyrian_roads_02_desc:0 "$building_type_valyrian_roads_01_desc$"  
-   building_valyrian_roads_01:0 "$building_type_valyrian_roads_02$" 
+   building_valyrian_roads_02:0 "$building_type_valyrian_roads_02$" 
    building_valyrian_roads_02_desc:0 "$building_type_valyrian_roads_02_desc$" 
 
 

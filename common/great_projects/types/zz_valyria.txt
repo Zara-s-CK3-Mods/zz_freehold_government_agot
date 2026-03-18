@@ -51,7 +51,7 @@ construct_mages_spire = {
 			custom_tooltip = {
 				text = great_project_type_construct_mages_spire_does_not_already_have_mages_spire
 				NOT = {
-					had_building_or_higher = zz_mages_tower_tower_01 # you can overwrite duchy buildings, but there's no point in doing it to the same one
+					has_building_or_higher = zz_mages_tower_tower_01 # you can overwrite duchy buildings, but there's no point in doing it to the same one
 				}
 			}
 			trigger_if = {
@@ -404,7 +404,11 @@ construct_valyrian_towers = {
 			custom_tooltip = {
 				text = great_project_type_construct_great_barracks_does_not_already_have_barracks
 				NOT = {
-					had_building_or_higher = valyrian_tower_01 # you can overwrite duchy buildings, but there's no point in doing it to the same one
+					has_building_or_higher = valyrian_tower_01 # you can overwrite duchy buildings, but there's no point in doing it to the same one
+					has_building_or_higher = valyrian_tower_I_01
+					has_building_or_higher = valyrian_tower_II_01
+					has_building_or_higher = valyrian_tower_III_01
+					has_building_or_higher = valyrian_tower_IV_01
 				}
 			}
 			NOT = {
@@ -441,7 +445,47 @@ construct_valyrian_towers = {
 		text = great_project_type_construct_great_barracks_province_gains_great_barracks
 		scope:province ?= {
 			add_province_modifier = extra_building_slot
-			add_building = valyrian_roads_01
+			if = {
+				limit = {
+					NOT = {
+						has_building_or_higher = valyrian_tower_01
+					}
+				}
+				add_building = valyrian_tower_01
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_building_or_higher = valyrian_tower_I_01
+					}
+				}
+				add_building = valyrian_tower_I_01
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_building_or_higher = valyrian_tower_II_01
+					}
+				}
+				add_building = valyrian_tower_II_01
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_building_or_higher = valyrian_tower_III_01
+					}
+				}
+				add_building = valyrian_tower_III_01
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_building_or_higher = valyrian_tower_IV_01
+					}
+				}
+				add_building = valyrian_tower_IV_01
+			}
+			
 		}
 		great_project_notify_completion = { CHARACTER = scope:owner }
 		scope:founder ?= {
@@ -738,7 +782,7 @@ construct_valyrian_roads = {
 			custom_tooltip = {
 				text = great_project_type_construct_great_barracks_does_not_already_have_barracks
 				NOT = {
-					had_building_or_higher = valyrian_roads_01 # you can overwrite duchy buildings, but there's no point in doing it to the same one
+					has_building_or_higher = valyrian_roads_01 # you can overwrite duchy buildings, but there's no point in doing it to the same one
 				}
 			}
 			NOT = {
@@ -1073,7 +1117,7 @@ construct_valyrian_walls = {
 			custom_tooltip = {
 				text = great_project_type_construct_great_barracks_does_not_already_have_barracks
 				NOT = {
-					had_building_or_higher = valyrian_walls_01 # you can overwrite duchy buildings, but there's no point in doing it to the same one
+					has_building_or_higher = valyrian_walls_01 # you can overwrite duchy buildings, but there's no point in doing it to the same one
 				}
 			}
 			NOT = {
