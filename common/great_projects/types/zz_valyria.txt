@@ -403,7 +403,7 @@ construct_valyrian_towers = {
 			}
 			custom_tooltip = {
 				text = great_project_type_construct_great_barracks_does_not_already_have_barracks
-				NOT = {
+				NAND = {
 					has_building_or_higher = valyrian_tower_01 # you can overwrite duchy buildings, but there's no point in doing it to the same one
 					has_building_or_higher = valyrian_tower_I_01
 					has_building_or_higher = valyrian_tower_II_01
