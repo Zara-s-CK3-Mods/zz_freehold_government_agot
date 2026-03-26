@@ -17,7 +17,7 @@
         admin_allows_holding_multiple_primary_tier_titles = yes
         treasury = yes
 		replace_gold_cost_by_treasury = yes
-        merit = yes 
+        #merit = yes 
     }
 
     royal_court = any
@@ -32,7 +32,7 @@
 
     fallback = 4
 	can_get_government = { 
-		has_character_flag = zz_valyria_freehold
+		#has_character_flag = zz_valyria_freehold
 	}
     primary_holding = city_holding
     valid_holdings = { castle_holding city_holding church_holding }

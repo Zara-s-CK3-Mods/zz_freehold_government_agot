@@ -113,7 +113,6 @@ construct_mages_spire = {
 		scope:founder ?= {
 			if = {
 				limit = {
-					tgp_is_any_minister = yes
 					is_alive = yes # this is actually necessary, because they remain the scope character and accessible even after death
 				}
 				change_influence = minister_influence_gain_value
@@ -491,7 +490,6 @@ construct_valyrian_towers = {
 		scope:founder ?= {
 			if = {
 				limit = {
-					tgp_is_any_minister = yes
 					is_alive = yes # this is actually necessary, because they remain the scope character and accessible even after death
 				}
 				change_influence = minister_influence_gain_value
@@ -825,7 +823,6 @@ construct_valyrian_roads = {
 		scope:founder ?= {
 			if = {
 				limit = {
-					tgp_is_any_minister = yes
 					is_alive = yes # this is actually necessary, because they remain the scope character and accessible even after death
 				}
 				change_influence = minister_influence_gain_value
@@ -1161,7 +1158,6 @@ construct_valyrian_walls = {
 		scope:founder ?= {
 			if = {
 				limit = {
-					tgp_is_any_minister = yes
 					is_alive = yes # this is actually necessary, because they remain the scope character and accessible even after death
 				}
 				change_influence = minister_influence_gain_value
