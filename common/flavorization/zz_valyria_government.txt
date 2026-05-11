@@ -1,4 +1,45 @@
-﻿
+﻿zz_baron_freehold_male = {							# The key of your title, this is how the game finds and references it
+	type = character							# Who/what is this for?
+	gender = male								# Which gender is this for? (Only use if type = character)
+	special = holder						# Are there any special requirements?
+	tier = barony								# Which tier must you be?
+	priority = 40000								# How high priority is this?
+	governments = { freehold_government }			# Which government type do you need to belong to?
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
+}
+
+zz_baron_freehold_female = {							# The key of your title, this is how the game finds and references it
+	type = character							# Who/what is this for?
+	gender = female								# Which gender is this for? (Only use if type = character)
+	special = holder						# Are there any special requirements?
+	tier = barony								# Which tier must you be?
+	priority = 40000								# How high priority is this?
+	governments = { freehold_government }			# Which government type do you need to belong to?
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
+}
+zz_baron_freehold_child_male = {							# The key of your title, this is how the game finds and references it
+	type = character							# Who/what is this for?
+	gender = male								# Which gender is this for? (Only use if type = character)
+	special = ruler_child						# Are there any special requirements?
+	tier = barony								# Which tier must you be?
+	priority = 40000								# How high priority is this?
+	governments = { freehold_government }			# Which government type do you need to belong to?
+}
+zz_baron_freehold_child_female = {							# The key of your title, this is how the game finds and references it
+	type = character							# Who/what is this for?
+	gender = female								# Which gender is this for? (Only use if type = character)
+	special = ruler_child						# Are there any special requirements?
+	tier = barony								# Which tier must you be?
+	priority = 40000								# How high priority is this?
+	governments = { freehold_government }			# Which government type do you need to belong to?
+}
+
 zz_count_freehold_male = {							# The key of your title, this is how the game finds and references it
 	type = character							# Who/what is this for?
 	gender = male								# Which gender is this for? (Only use if type = character)
@@ -6,8 +47,12 @@ zz_count_freehold_male = {							# The key of your title, this is how the game f
 	tier = county								# Which tier must you be?
 	priority = 40000								# How high priority is this?
 	governments = { freehold_government }			# Which government type do you need to belong to?
-
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
+
 zz_count_freehold_female = {							# The key of your title, this is how the game finds and references it
 	type = character							# Who/what is this for?
 	gender = female								# Which gender is this for? (Only use if type = character)
@@ -15,8 +60,30 @@ zz_count_freehold_female = {							# The key of your title, this is how the game
 	tier = county								# Which tier must you be?
 	priority = 40000								# How high priority is this?
 	governments = { freehold_government }			# Which government type do you need to belong to?
-
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
+
+zz_count_freehold_child_male = {							# The key of your title, this is how the game finds and references it
+	type = character							# Who/what is this for?
+	gender = male								# Which gender is this for? (Only use if type = character)
+	special = ruler_child						# Are there any special requirements?
+	tier = county								# Which tier must you be?
+	priority = 40000								# How high priority is this?
+	governments = { freehold_government }			# Which government type do you need to belong to?
+}
+zz_count_freehold_child_female = {							# The key of your title, this is how the game finds and references it
+	type = character							# Who/what is this for?
+	gender = female								# Which gender is this for? (Only use if type = character)
+	special = ruler_child						# Are there any special requirements?
+	tier = county								# Which tier must you be?
+	priority = 40000								# How high priority is this?
+	governments = { freehold_government }			# Which government type do you need to belong to?
+}
+
+
 zz_duke_freehold_male = {							# The key of your title, this is how the game finds and references it
 	type = character							# Who/what is this for?
 	gender = male								# Which gender is this for? (Only use if type = character)
@@ -24,6 +91,10 @@ zz_duke_freehold_male = {							# The key of your title, this is how the game fi
 	tier = duchy								# Which tier must you be?
 	priority = 40000								# How high priority is this?
 	governments = { freehold_government }			# Which government type do you need to belong to?
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 
 }
 zz_duke_freehold_female = {							# The key of your title, this is how the game finds and references it
@@ -33,9 +104,28 @@ zz_duke_freehold_female = {							# The key of your title, this is how the game 
 	tier = duchy								# Which tier must you be?
 	priority = 40000								# How high priority is this?
 	governments = { freehold_government }			# Which government type do you need to belong to?
-
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 }
-zz_duke_king_freehold_male = {							# The key of your title, this is how the game finds and references it
+zz_duke_freehold_child_male = {							# The key of your title, this is how the game finds and references it
+	type = character							# Who/what is this for?
+	gender = male								# Which gender is this for? (Only use if type = character)
+	special = ruler_child						# Are there any special requirements?
+	tier = duchy								# Which tier must you be?
+	priority = 40000								# How high priority is this?
+	governments = { freehold_government }			# Which government type do you need to belong to?
+}
+zz_duke_freehold_child_female = {							# The key of your title, this is how the game finds and references it
+	type = character							# Who/what is this for?
+	gender = female								# Which gender is this for? (Only use if type = character)
+	special = ruler_child						# Are there any special requirements?
+	tier = duchy								# Which tier must you be?
+	priority = 40000								# How high priority is this?
+	governments = { freehold_government }			# Which government type do you need to belong to?
+}
+zz_king_freehold_male = {							# The key of your title, this is how the game finds and references it
 	type = character							# Who/what is this for?
 	gender = male								# Which gender is this for? (Only use if type = character)
 	special = holder						# Are there any special requirements?
@@ -44,12 +134,32 @@ zz_duke_king_freehold_male = {							# The key of your title, this is how the ga
 	governments = { freehold_government }			# Which government type do you need to belong to?
 	
 }
-zz_duke_king_freehold_female = {							# The key of your title, this is how the game finds and references it
+zz_king_freehold_female = {							# The key of your title, this is how the game finds and references it
 	type = character							# Who/what is this for?
 	gender = female								# Which gender is this for? (Only use if type = character)
 	special = holder						# Are there any special requirements?
 	tier = kingdom								# Which tier must you be?
 	priority = 60000								# How high priority is this?
+	governments = { freehold_government }			# Which government type do you need to belong to?
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
+}
+zz_king_freehold_child_male = {							# The key of your title, this is how the game finds and references it
+	type = character							# Who/what is this for?
+	gender = male								# Which gender is this for? (Only use if type = character)
+	special = ruler_child						# Are there any special requirements?
+	tier = kingdom								# Which tier must you be?
+	priority = 40000								# How high priority is this?
+	governments = { freehold_government }			# Which government type do you need to belong to?
+}
+zz_king_freehold_child_female = {							# The key of your title, this is how the game finds and references it
+	type = character							# Who/what is this for?
+	gender = female								# Which gender is this for? (Only use if type = character)
+	special = ruler_child						# Are there any special requirements?
+	tier = kingdom								# Which tier must you be?
+	priority = 40000								# How high priority is this?
 	governments = { freehold_government }			# Which government type do you need to belong to?
 }
 zz_emperor_freehold_male = {							# The key of your title, this is how the game finds and references it
@@ -59,6 +169,10 @@ zz_emperor_freehold_male = {							# The key of your title, this is how the game
 	tier = empire								# Which tier must you be?
 	priority = 500000								# How high priority is this?
 	governments = { freehold_government }			# Which government type do you need to belong to?
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 	
 }
 zz_emperor_freehold_female = {							# The key of your title, this is how the game finds and references it
@@ -68,14 +182,88 @@ zz_emperor_freehold_female = {							# The key of your title, this is how the ga
 	tier = empire								# Which tier must you be?
 	priority = 500000								# How high priority is this?
 	governments = { freehold_government }			# Which government type do you need to belong to?
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
+}
+zz_emperor_freehold_child_male = {							# The key of your title, this is how the game finds and references it
+	type = character							# Who/what is this for?
+	gender = male								# Which gender is this for? (Only use if type = character)
+	special = ruler_child						# Are there any special requirements?
+	tier = empire								# Which tier must you be?
+	priority = 40000								# How high priority is this?
+	governments = { freehold_government }			# Which government type do you need to belong to?
+}
+zz_emperor_freehold_child_female = {							# The key of your title, this is how the game finds and references it
+	type = character							# Who/what is this for?
+	gender = female								# Which gender is this for? (Only use if type = character)
+	special = ruler_child						# Are there any special requirements?
+	tier = empire								# Which tier must you be?
+	priority = 40000								# How high priority is this?
+	governments = { freehold_government }			# Which government type do you need to belong to?
+}
+zz_hegemon_freehold_male = {							# The key of your title, this is how the game finds and references it
+	type = character							# Who/what is this for?
+	gender = male								# Which gender is this for? (Only use if type = character)
+	special = holder						# Are there any special requirements?
+	tier = hegemony								# Which tier must you be?
+	priority = 500000								# How high priority is this?
+	governments = { freehold_government }			# Which government type do you need to belong to?
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
 	
 }
-
+zz_hegemon_freehold_female = {							# The key of your title, this is how the game finds and references it
+	type = character							# Who/what is this for?
+	gender = female								# Which gender is this for? (Only use if type = character)
+	special = holder						# Are there any special requirements?
+	tier = hegemony								# Which tier must you be?
+	priority = 500000								# How high priority is this?
+	governments = { freehold_government }			# Which government type do you need to belong to?
+	flavourization_rules = {
+		top_liege = no
+		only_holder = yes
+	}
+}
+zz_hegemon_freehold_child_male = {							# The key of your title, this is how the game finds and references it
+	type = character							# Who/what is this for?
+	gender = male								# Which gender is this for? (Only use if type = character)
+	special = ruler_child						# Are there any special requirements?
+	tier = hegemony								# Which tier must you be?
+	priority = 40000								# How high priority is this?
+	governments = { freehold_government }			# Which government type do you need to belong to?
+}
+zz_hegemon_freehold_child_female = {							# The key of your title, this is how the game finds and references it
+	type = character							# Who/what is this for?
+	gender = female								# Which gender is this for? (Only use if type = character)
+	special = ruler_child						# Are there any special requirements?
+	tier = hegemony								# Which tier must you be?
+	priority = 40000								# How high priority is this?
+	governments = { freehold_government }			# Which government type do you need to belong to?
+}
+barony_freehold = {
+	type = title
+	tier = barony
+	priority = 50000
+	governments = { freehold_government }
+	flavourization_rules = {
+		top_liege = yes
+		ignore_top_liege_government = yes #In an administrative realm all governors vassals will use the titles of the top liege - this ensures it is only the governors that do, and not also feudal vassals, republican vassals, etc.
+	}
+	
+}
 county_freehold = {
 	type = title
 	tier = county
 	priority = 50000
 	governments = { freehold_government }
+	flavourization_rules = {
+		top_liege = yes
+		ignore_top_liege_government = yes #In an administrative realm all governors vassals will use the titles of the top liege - this ensures it is only the governors that do, and not also feudal vassals, republican vassals, etc.
+	}
 	
 }
 duchy_freehold = {
@@ -83,6 +271,10 @@ duchy_freehold = {
 	tier = duchy
 	priority = 50000
 	governments = { freehold_government }
+	flavourization_rules = {
+		top_liege = yes
+		ignore_top_liege_government = yes #In an administrative realm all governors vassals will use the titles of the top liege - this ensures it is only the governors that do, and not also feudal vassals, republican vassals, etc.
+	}
 
 }
 
@@ -91,6 +283,10 @@ kingdom_freehold  = {
 	tier = kingdom
 	priority = 73000
 	governments = { freehold_government }
+	flavourization_rules = {
+		top_liege = yes
+		ignore_top_liege_government = yes #In an administrative realm all governors vassals will use the titles of the top liege - this ensures it is only the governors that do, and not also feudal vassals, republican vassals, etc.
+	}
 
 }
 empire_freehold = {
@@ -98,6 +294,18 @@ empire_freehold = {
 	tier = empire
 	priority = 10800
 	governments = { freehold_government }
-
-
+	flavourization_rules = {
+		top_liege = yes
+		ignore_top_liege_government = yes #In an administrative realm all governors vassals will use the titles of the top liege - this ensures it is only the governors that do, and not also feudal vassals, republican vassals, etc.
+	}
+}
+hegemony_freehold = {
+	type = title
+	tier = hegemony
+	priority = 10800
+	governments = { freehold_government }
+	flavourization_rules = {
+		top_liege = yes
+		ignore_top_liege_government = yes #In an administrative realm all governors vassals will use the titles of the top liege - this ensures it is only the governors that do, and not also feudal vassals, republican vassals, etc.
+	}
 }

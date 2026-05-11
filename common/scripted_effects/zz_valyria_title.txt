@@ -1,0 +1,52 @@
+zz_freehold_title_set = {
+	else_if = {
+		limit = {
+			OR = {
+				agot_localization_government_trigger = { GOV = freehold SPOUSE_SCOPE = scope:spouse_scope }
+				agot_localization_government_trigger = { GOV = freehold SPOUSE_SCOPE = scope:spouse_scope }
+			}
+		}
+
+		### HEGEMONY ###
+		if = {
+			limit = { $SCOPED_TITLE$ ?= { tier = tier_hegemony } }
+			set_title_localization_effect = { SCOPE = $SCOPE$ KEY = "zz_emperor_freehold_male" GENDER = male }
+			set_title_localization_effect = { SCOPE = $SCOPE$ KEY = "zz_emperor_freehold_female" GENDER = female }
+		}
+
+		### EMPIRE ###
+		else_if = {
+			limit = { $SCOPED_TITLE$ ?= { tier = tier_empire } }
+			set_title_localization_effect = { SCOPE = $SCOPE$ KEY = "zz_emperor_freehold_male" GENDER = male }
+			set_title_localization_effect = { SCOPE = $SCOPE$ KEY = "zz_emperor_freehold_female" GENDER = female }
+		}
+
+		### KINGDOM ###
+		else_if = {
+			limit = { $SCOPED_TITLE$ ?= { tier = tier_kingdom } }
+			set_title_localization_effect = { SCOPE = $SCOPE$ KEY = "zz_king_freehold_male" GENDER = male }
+			set_title_localization_effect = { SCOPE = $SCOPE$ KEY = "zz_king_freehold_female" GENDER = female }
+		}
+
+		### DUCHY ###
+		else_if = {
+			limit = { $SCOPED_TITLE$ ?= { tier = tier_duchy } }
+			set_title_localization_effect = { SCOPE = $SCOPE$ KEY = "zz_duke_freehold_male" GENDER = male }
+			set_title_localization_effect = { SCOPE = $SCOPE$ KEY = "zz_duke_freehold_female" GENDER = female }
+		}
+
+		### COUNTY ###
+		else_if = {
+			limit = { $SCOPED_TITLE$ ?= { tier = tier_county } }
+			set_title_localization_effect = { SCOPE = $SCOPE$ KEY = "zz_count_freehold_male" GENDER = male }
+			set_title_localization_effect = { SCOPE = $SCOPE$ KEY = "zz_count_freehold_female" GENDER = female }
+		}
+
+		### BARONY ###
+		else_if = {
+			limit = { $SCOPED_TITLE$ ?= { tier = tier_barony } }
+			set_title_localization_effect = { SCOPE = $SCOPE$ KEY = "zz_count_freehold_male" GENDER = male }
+			set_title_localization_effect = { SCOPE = $SCOPE$ KEY = "zz_count_freehold_female" GENDER = female }
+		}
+	}
+}

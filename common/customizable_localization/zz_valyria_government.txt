@@ -18,90 +18,29 @@
 FIXTITLE_FLAVOUR_1 = {
 	type = character
 	text = {
+		localization_key = CHARACTER_VIEW_NAME_1
 		trigger = {
 			OR = { 
 				has_character_flag = IGNOREAGOTNAMENONSENSE
 				government_has_flag = government_is_freehold
 				government_has_flag = IGNOREAGOTNAMENONSENSE
 				primary_spouse = {
-					has_character_flag = IGNOREAGOTNAMENONSENSE
-					government_has_flag = government_is_freehold
-					government_has_flag = IGNOREAGOTNAMENONSENSE
+					OR = {
+						has_character_flag = IGNOREAGOTNAMENONSENSE
+						government_has_flag = government_is_freehold
+						government_has_flag = IGNOREAGOTNAMENONSENSE
+					}
+					
 				}
 			}
 		}
-		localization_key = CHARACTER_VIEW_NAME_1
+		
 	}
 
 	text = {
+		localization_key = MISSING_TITLE_LOC_1
 		trigger = { always = no }
 		fallback = yes
-		localization_key = MISSING_TITLE_LOC_1
-	}
-}
-FIXTITLE_FLAVOUR = {
-	type = character
-
-	text = {
-		trigger = {
-			is_male = yes 
-			zz_valyria_tier_check = { TIER = tier_county }
-		}
-		localization_key = zz_count_freehold_male
-	}
-	text = {
-		trigger = {
-			is_female = yes 
-			zz_valyria_tier_check = { TIER = tier_county }
-		}
-		localization_key = zz_count_freehold_female
-	}
-	text = {
-		trigger = {
-			is_male = yes 
-			zz_valyria_tier_check = { TIER = tier_duchy }
-		}
-		localization_key = zz_duke_freehold_male
-	}
-	text = {
-		trigger = {
-			is_female = yes 
-			zz_valyria_tier_check = { TIER = tier_duchy }
-		}
-		localization_key = zz_duke_freehold_female
-	}
-	text = {
-		trigger = {
-			is_male = yes 
-			zz_valyria_tier_check = { TIER = tier_kingdom }
-		}
-		localization_key = zz_duke_king_freehold_male
-	}
-	text = {
-		trigger = {
-			is_female = yes 
-			zz_valyria_tier_check = { TIER = tier_kingdom }
-		}
-		localization_key = zz_duke_king_freehold_female
-	}
-	text = {
-		trigger = {
-			zz_valyria_tier_check = { TIER = tier_empire }
-			is_male = yes
-		}
-		localization_key = zz_emperor_freehold_male
-	}
-	text = {
-		trigger = {
-			zz_valyria_tier_check = { TIER = tier_empire }
-			is_female = yes
-		}
-		localization_key = zz_emperor_freehold_female
-	}
-
-	text = {
-		trigger = { always = no }
-		fallback = yes
-		localization_key = MISSING_TITLE_LOC_1
+		
 	}
 }

@@ -1,4 +1,4 @@
 ﻿l_english:
-  MISSING_TITLE_LOC:0 "[CHARACTER.Custom('FIXTITLE_FLAVOUR_1')]"
+  #MISSING_TITLE_LOC:0 "[THIS.Custom('FIXTITLE_FLAVOUR_1')]"
   MISSING_TITLE_LOC_1:0 "@warning_icon!#warning Missing Title Loc#!"
-  CHARACTER_VIEW_NAME_1:0 "[Character.GetTitleTierName], "
+  CHARACTER_VIEW_NAME_1:0 "[GetTitleTierName],"

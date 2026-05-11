@@ -1283,7 +1283,7 @@ mage_lord_family = {
 				limit = {
 					has_trait = fornicator
 					exists = top_liege.primary_title.state_faith
-					trait_is_criminal_in_faith_trigger = { TRAIT = fornicator FAITH = top_liege.primary_title.state_faith GENDER_CHARACTER = root }
+					trait_is_criminal_in_faith_trigger = { TRAIT = trait:fornicator FAITH = top_liege.primary_title.state_faith GENDER_CHARACTER = root }
 				}
 				add = {
 					value = -20

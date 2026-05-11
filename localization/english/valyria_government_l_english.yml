@@ -1,87 +1,104 @@
 ﻿l_english: 
-
-   ### MAA 
-
-   zz_valyria_dragon_swords:0 "Valyrian Foot Men"
-   zz_valyria_dragon_swords_flavor:0 "A Heavy Infantry unit of the $game_concept_freehold$. Armed with blades of Valyrian make, and fitted in armour, these troops make a decided showing on the battlefield, where their better equipment tends to be telling in effectiveness."
-   zz_valyria_dragon_knights:0 "Valyrian Heavy Cavalry"
-   zz_valyria_dragon_knights_flavor:0 "A Heavy Cavalry unit of the $game_concept_freehold$. Equipped with blades and armour of Valyrian make, these elite heavy cavalry can rapidly turn the tide of any battle with their fearsome charges."
-   zz_valyria_dragon_bows:0 "Valyrian Dragonbone Bows"
-   zz_valyria_dragon_bows_flavor:0 "A Heavy Archer unit of  the $game_concept_freehold$. Fitted with armour of Valyrian make, and bows formed from the bones of dragons, these elite marksman can make short work of the foes of Valyria."
-   zz_valyria_dragon_scouts:0 "Valyrian Skirmish Cavalry"
-   zz_valyria_dragon_scouts_flavor:0 "A Skirmish Cavalry Unit of the $game_concept_freehold$. Fitted with armour of Valyrian make, and trained in rapid pursuit tactics, these cavalry focus on rapid assault and retreat tactics, with a purpose of bringing frustation to the enemies of Valyria."
-   zz_valyria_dragon_spears:0 "Valyrian Heavy Pikeman"
-   zz_valyria_dragon_spears_flavor:0 "A Heavy Pikeman unit of the $game_concept_freehold$. In study armour of Valyrian make, and trained to hold the line, these are the mighty anvil upon which the Valyrian hammer will surely fall."
-   
-   ### Concept
-
-   game_concept_freehold_government: "Freehold Government"
-   game_concept_freehold_governments: "Freehold Governments"
-   game_concept_freehold: "Freehold"
-   game_concept_freehold_i: "@government_type_administrative!"
-   game_concept_freehold_desc: "$game_concept_freehold$ is a [government_form|E] that appoints [characters|E] as [governors|E], to manage and preside over land, called [provinces|E], on behalf of their [liege|E].\n\n$game_concept_freehold$ Characters have access to [influence|E] and some also have a personal [family_estate|E].\n\nOnly [independent|E] [rulers|E] of an $game_concept_freehold$ [realm|E] have [legitimacy|E], while [vassals|E] do not.\n\n$admin_cannot_declare_internal_wars$"
-   freehold_government_house_attribute_flavor_name: "[powerful_family_attribute|E]"
-   freehold_government_house_attribute_flavor_name_no_tooltip: "$game_concept_powerful_family_attribute$"
-
-   ## Script Values 
-
-   mages_house_desc:0 "House Mages"
-   dragonrider_house_desc:0 "House Dragon Riders" 
-
-   ## Decision ##
-   convert_to_freehold_decision:0 "Establish a Freehold"
-   convert_to_freehold_decision_tooltip:0 "Change [government|E] type by becoming [freehold|E]"
-   convert_to_freehold_decision_confirm:0 "Adopt Ways of the Freehold"
-   go_freehold_government_desc:0 "Having found the secrets of old Valyria, it is possible to adopt the government structure of the old rulers of Essos."
-   # Freehold Governent
-   freehold_government: "Freehold"
-   freehold_government_with_icon: "@government_type_administrative!$freehold_government$"
-   freehold_government_adjective: "Freeholder"
-   freehold_government_realm: "Freehold Realm"
-   freehold_government_desc: "\n$game_concept_freehold_desc$\n\n#F Freehold Government is a government modeled after the Valyrian Freehold where every freeborn landowner had a say in its governance. In truth, power often resided in the hands of powerful noble families referred to as the lords freeholder. The most powerful and influential of these families were the dragonlords, who rode and commanded the great dragons of Valyria.#!"
-
-
-
-
-   # Modifiers
-   freehold_government_vassal_opinion: "[freehold|E] [vassal|E] Opinion"
-   freehold_government_opinion: "[administrative_i|E] [freehold|E] Ruler Opinion"
-
-   
-    freehold_government_tax_contribution_add: "[freehold|E] [vassal|E] [tax|E] [modifier_base_contribution|E]"
-   freehold_government_tax_contribution_add: "[freehold|E] [vassal|E] [tax|E] [modifier_base_contribution|E]"
-   freehold_government_tax_contribution_mult: "[freehold|E] [vassal|E] [tax|E] [modifier_contribution|E]"
-   freehold_government_levy_contribution_add: "[freehold|E] [vassal|E] [levy|E] [modifier_base_contribution|E]"
-   freehold_government_levy_contribution_mult: "[freehold|E] [vassal|E] [levy|E] [modifier_contribution|E]"
+  
+  ### MAA 
+  
+  zz_valyria_dragon_swords:0 "Valyrian Foot Men"
+  zz_valyria_dragon_swords_flavor:0 "A Heavy Infantry unit of the $game_concept_freehold$. Armed with blades of Valyrian make, and fitted in armour, these troops make a decided showing on the battlefield, where their better equipment tends to be telling in effectiveness."
+  zz_valyria_dragon_knights:0 "Valyrian Heavy Cavalry"
+  zz_valyria_dragon_knights_flavor:0 "A Heavy Cavalry unit of the $game_concept_freehold$. Equipped with blades and armour of Valyrian make, these elite heavy cavalry can rapidly turn the tide of any battle with their fearsome charges."
+  zz_valyria_dragon_bows:0 "Valyrian Dragonbone Bows"
+  zz_valyria_dragon_bows_flavor:0 "A Heavy Archer unit of  the $game_concept_freehold$. Fitted with armour of Valyrian make, and bows formed from the bones of dragons, these elite marksman can make short work of the foes of Valyria."
+  zz_valyria_dragon_scouts:0 "Valyrian Skirmish Cavalry"
+  zz_valyria_dragon_scouts_flavor:0 "A Skirmish Cavalry Unit of the $game_concept_freehold$. Fitted with armour of Valyrian make, and trained in rapid pursuit tactics, these cavalry focus on rapid assault and retreat tactics, with a purpose of bringing frustation to the enemies of Valyria."
+  zz_valyria_dragon_spears:0 "Valyrian Heavy Pikeman"
+  zz_valyria_dragon_spears_flavor:0 "A Heavy Pikeman unit of the $game_concept_freehold$. In study armour of Valyrian make, and trained to hold the line, these are the mighty anvil upon which the Valyrian hammer will surely fall."
+  
+  ### Concept
+  
+  game_concept_freehold_government: "Freehold Government"
+  game_concept_freehold_governments: "Freehold Governments"
+  game_concept_freehold: "Freehold"
+  game_concept_freehold_i: "@government_type_administrative!"
+  game_concept_freehold_desc: "$game_concept_freehold$ is a [government_form|E] that appoints [characters|E] as [governors|E], to manage and preside over land, called [provinces|E], on behalf of their [liege|E].\n\n$game_concept_freehold$ Characters have access to [influence|E] and some also have a personal [family_estate|E].\n\nOnly [independent|E] [rulers|E] of an $game_concept_freehold$ [realm|E] have [legitimacy|E], while [vassals|E] do not.\n\n$admin_cannot_declare_internal_wars$"
+  freehold_government_house_attribute_flavor_name: "[powerful_family_attribute|E]"
+  freehold_government_house_attribute_flavor_name_no_tooltip: "$game_concept_powerful_family_attribute$"
+  
+  ## Script Values 
+  
+  mages_house_desc:0 "House Mages"
+  dragonrider_house_desc:0 "House Dragon Riders" 
+  
+  ## Decision ##
+  convert_to_freehold_decision:0 "Establish a Freehold"
+  convert_to_freehold_decision_tooltip:0 "Change [government|E] type by becoming [freehold|E]"
+  convert_to_freehold_decision_confirm:0 "Adopt Ways of the Freehold"
+  go_freehold_government_desc:0 "Having found the secrets of old Valyria, it is possible to adopt the government structure of the old rulers of Essos."
+  # Freehold Governent
+  freehold_government: "Freehold"
+  freehold_government_with_icon: "@government_type_administrative!$freehold_government$"
+  freehold_government_adjective: "Freeholder"
+  freehold_government_realm: "Freehold Realm"
+  freehold_government_desc: "\n$game_concept_freehold_desc$\n\n#F Freehold Government is a government modeled after the Valyrian Freehold where every freeborn landowner had a say in its governance. In truth, power often resided in the hands of powerful noble families referred to as the lords freeholder. The most powerful and influential of these families were the dragonlords, who rode and commanded the great dragons of Valyria.#!"
+  
+  
+  
+  
+  # Modifiers
+  freehold_government_vassal_opinion: "[freehold|E] [vassal|E] Opinion"
+  freehold_government_opinion: "[administrative_i|E] [freehold|E] Ruler Opinion"
 
 
-   ###Flavour Titles 
-   
-   zz_count_freehold_male: "Freeholder"
-   zz_count_freehold_female: "Freeholder"
-   county_freehold: "Freeholding"
-   zz_duke_freehold_male: "Lord Freeholder"
-   zz_duke_freehold_female: "Lady Freeholder"
-   duchy_freehold: "Greater Freeholding"
-   zz_duke_king_freehold_male: "Archon"
-   zz_duke_king_freehold_female: "Archoness"
-   kingdom_freehold: "Freehold"
-   zz_emperor_freehold_male: "Lord Archon"
-   zz_emperor_freehold_female: "Lady Archoness"
-   empire_freehold: "Freehold"
-
-   ## House Unities
-   mighty_dragon_lords_house_power:0 "Dragon Lords"
-   mighty_dragon_lords_house_power_desc:0 "Trainers of dragons, this family takes most seriously its mighty beasts of war."
+  freehold_government_tax_contribution_add: "[freehold|E] [vassal|E] [tax|E] [modifier_base_contribution|E]"
+  freehold_government_tax_contribution_add: "[freehold|E] [vassal|E] [tax|E] [modifier_base_contribution|E]"
+  freehold_government_tax_contribution_mult: "[freehold|E] [vassal|E] [tax|E] [modifier_contribution|E]"
+  freehold_government_levy_contribution_add: "[freehold|E] [vassal|E] [levy|E] [modifier_base_contribution|E]"
+  freehold_government_levy_contribution_mult: "[freehold|E] [vassal|E] [levy|E] [modifier_contribution|E]"
 
 
-   ### POI 
+  ###Flavour Titles 
+  zz_baron_freehold_male:0 "Lesser Freeholder"
+  zz_baron_freehold_female:0 "Lesser Freeholder"
+  zz_baron_freehold_child_male:0 "Lord"
+  zz_baron_freehold_child_female:0 "Lady"
+  barony_freehold:0 "Lesser Freehold"
+  zz_count_freehold_male: "Freeholder"
+  zz_count_freehold_female: "Freeholder"
+  zz_count_freehold_child_male:0 "Lord"
+  zz_count_freehold_child_female:0 "Lady"
+  county_freehold: "Freeholding"
+  zz_duke_freehold_male: "Lord Freeholder"
+  zz_duke_freehold_female: "Lady Freeholder"
+  zz_duke_freehold_child_male:0 "Lord"
+  zz_duke_freehold_child_female:0 "Lady"
+  duchy_freehold: "Greater Freeholding"
+  zz_king_freehold_male: "Archon"
+  zz_king_freehold_female: "Archoness"
+  zz_king_freehold_child_male:0 "Lord"
+  zz_king_freehold_child_female:0 "Lady"
+  kingdom_freehold: "Freehold"
+  zz_emperor_freehold_male: "Lord Archon"
+  zz_emperor_freehold_female: "Lady Archoness"
+  zz_emperor_freehold_child_male:0 "Lord"
+  zz_emperor_freehold_child_female:0 "Lady"
+  empire_freehold: "Freehold"
+  zz_hegemon_freehold_male:0 "Most Serne High Archon"
+  zz_hegemon_freehold_female::0 "Most Serene High Archoness"
+  zz_hegemon_freehold_child_male:0 "High Lord"
+  zz_hegemon_freehold_child_female:0 "High Lady"
+  hegemony_freehold:0 "Grand Freehold"
 
-   TRAVEL_POINT_OF_INTEREST_TT_poi_valyria_freehold: "Secrets of the Freehold" 
-   poi_freehold.visit: "Secrets of the Freehold"
-   poi_freehold.effect: "Recover the secrets of forming a government based on the Freehold of Valyria"
-   ### Events
-   zz_valyria_freehold_discovery.9000.t: "Legacy of Lost Valyria"
+  ## House Unities
+  mighty_dragon_lords_house_power:0 "Dragon Lords"
+  mighty_dragon_lords_house_power_desc:0 "Trainers of dragons, this family takes most seriously its mighty beasts of war."
+
+
+  ### POI 
+
+  TRAVEL_POINT_OF_INTEREST_TT_poi_valyria_freehold: "Secrets of the Freehold" 
+  poi_freehold.visit: "Secrets of the Freehold"
+  poi_freehold.effect: "Recover the secrets of forming a government based on the Freehold of Valyria"
+  ### Events
+  zz_valyria_freehold_discovery.9000.t: "Legacy of Lost Valyria"
    zz_valyria_freehold_discovery.9000.desc: "Hidden in an archive you have found a scroll outlining the organisation of the lost Freehold. \nWith relatively minor effort, you could recreate these power structures, and better support your realm and its dragon lords. \nUnder such a structure, it would be those houses who command the fury of the Dragons that would hold the true balance of power in your realm."
    zz_valyria_freehold_discovery.9000.a: "Like Valyria of Old!"
    zz_valyria_freehold_discovery.9000.b: "Let the past remain in the ruins."

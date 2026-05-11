@@ -1,0 +1,42 @@
+﻿zz_count_freehold_female = {
+	first = zz_count_freehold_female
+	third = zz_count_freehold_female
+	global = zz_count_freehold_female
+}
+
+zz_count_freehold_male = {
+	first = zz_count_freehold_male
+	third = zz_count_freehold_male
+	global = zz_count_freehold_male
+}
+
+zz_duke_freehold_male = {
+	first = zz_duke_freehold_male
+	third = zz_duke_freehold_male
+	global = zz_duke_freehold_male
+}
+zz_duke_freehold_female = {
+	first = zz_duke_freehold_female
+	third = zz_duke_freehold_female
+	global = zz_duke_freehold_female
+}
+zz_king_freehold_male = {
+	first = zz_king_freehold_male
+	third = zz_king_freehold_male
+	global = zz_king_freehold_male
+}
+zz_king_freehold_female = {
+	first = zz_king_freehold_female
+	third = zz_king_freehold_female
+	global = zz_king_freehold_female
+}
+zz_emperor_freehold_male = {
+	first = zz_emperor_freehold_male
+	third = zz_emperor_freehold_male
+	global = zz_emperor_freehold_male
+}
+zz_emperor_freehold_female = {
+	first = zz_emperor_freehold_female
+	third = zz_emperor_freehold_female
+	global = zz_emperor_freehold_female
+}
