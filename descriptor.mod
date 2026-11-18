@@ -6,6 +6,6 @@ tags={
 	"Culture"
 }
 name="AGOT - Freehold Government"
-supported_version="1.19.0.4"
+supported_version="1.19.0.6"
 path="/home/mcliff/.local/share/Paradox Interactive/Crusader Kings III/mod/zz_freehold_government_agot"
 remote_file_id="3490267450"

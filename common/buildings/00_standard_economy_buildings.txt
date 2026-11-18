@@ -4636,6 +4636,9 @@ common_tradeport_01 = {
 		stationed_maa_toughness_mult = normal_maa_toughness_tier_1
 	}
 
+	#AGOT Added
+	effect_desc = agot_sailing_activity_cost_discount_minor_desc
+
 	on_complete = {
 		#Mandala Creator Aspect
 		creator_mandala_built_regular_building_piety_effect = yes
@@ -4765,6 +4768,9 @@ common_tradeport_02 = {
 		stationed_maa_toughness_mult = normal_maa_toughness_tier_2
 	}
 
+	#AGOT Added
+	effect_desc = agot_sailing_activity_cost_discount_minor_desc
+
 	on_complete = {
 		#Mandala Creator Aspect
 		creator_mandala_built_regular_building_piety_effect = yes
@@ -4785,6 +4791,8 @@ common_tradeport_02 = {
 
 common_tradeport_03 = {
 	construction_time = quick_construction_time
+	#AGOT Added
+	effect_desc = agot_sailing_activity_cost_discount_medium_desc
 
 	can_construct_potential = {
 		building_common_tradeport_requirement_terrain = yes
@@ -4849,6 +4857,9 @@ common_tradeport_03 = {
 		stationed_maa_toughness_mult = normal_maa_toughness_tier_3
 	}
 
+	#AGOT Added
+	effect_desc = agot_sailing_activity_cost_discount_minor_desc
+
 	on_complete = {
 		#Mandala Creator Aspect
 		creator_mandala_built_regular_building_piety_effect = yes
@@ -4865,6 +4876,8 @@ common_tradeport_03 = {
 
 common_tradeport_04 = {
 	construction_time = quick_construction_time
+	#AGOT Added
+	effect_desc = agot_sailing_activity_cost_discount_medium_desc
 
 	can_construct_potential = {
 		building_common_tradeport_requirement_terrain = yes
@@ -4925,6 +4938,9 @@ common_tradeport_04 = {
 		stationed_maa_toughness_mult = normal_maa_toughness_tier_4
 	}
 
+	#AGOT Added
+	effect_desc = agot_sailing_activity_cost_discount_minor_desc
+
 	on_complete = {
 		#Mandala Creator Aspect
 		creator_mandala_built_regular_building_piety_effect = yes
@@ -4941,6 +4957,8 @@ common_tradeport_04 = {
 
 common_tradeport_05 = {
 	construction_time = quick_construction_time
+	#AGOT Added
+	effect_desc = agot_sailing_activity_cost_discount_medium_desc
 
 	can_construct_potential = {
 		building_common_tradeport_requirement_terrain = yes
@@ -5001,6 +5019,9 @@ common_tradeport_05 = {
 		stationed_maa_toughness_mult = normal_maa_toughness_tier_5
 	}
 
+	#AGOT Added
+	effect_desc = agot_sailing_activity_cost_discount_minor_desc
+
 	on_complete = {
 		#Mandala Creator Aspect
 		creator_mandala_built_regular_building_piety_effect = yes
@@ -5017,6 +5038,8 @@ common_tradeport_05 = {
 
 common_tradeport_06 = {
 	construction_time = quick_construction_time
+	#AGOT Added
+	effect_desc = agot_sailing_activity_cost_discount_major_desc
 
 	can_construct_potential = {
 		building_common_tradeport_requirement_terrain = yes
@@ -5077,6 +5100,9 @@ common_tradeport_06 = {
 		stationed_maa_toughness_mult = normal_maa_toughness_tier_6
 	}
 
+	#AGOT Added
+	effect_desc = agot_sailing_activity_cost_discount_minor_desc
+
 	on_complete = {
 		#Mandala Creator Aspect
 		creator_mandala_built_regular_building_piety_effect = yes
@@ -5093,6 +5119,8 @@ common_tradeport_06 = {
 
 common_tradeport_07 = {
 	construction_time = quick_construction_time
+	#AGOT Added
+	effect_desc = agot_sailing_activity_cost_discount_max_desc
 
 	can_construct_potential = {
 		building_common_tradeport_requirement_terrain = yes
@@ -5153,6 +5181,9 @@ common_tradeport_07 = {
 		stationed_maa_toughness_mult = normal_maa_toughness_tier_7
 	}
 
+	#AGOT Added
+	effect_desc = agot_sailing_activity_cost_discount_minor_desc
+
 	on_complete = {
 		#Mandala Creator Aspect
 		creator_mandala_built_regular_building_piety_effect = yes
@@ -5169,6 +5200,8 @@ common_tradeport_07 = {
 
 common_tradeport_08 = {
 	construction_time = quick_construction_time
+	#AGOT Added
+	effect_desc = agot_sailing_activity_cost_discount_max_desc
 
 	can_construct_potential = {
 		building_common_tradeport_requirement_terrain = yes
@@ -5228,6 +5261,9 @@ common_tradeport_08 = {
 		parameter = trade_ports_stationed_maa_bonus
 		stationed_maa_toughness_mult = normal_maa_toughness_tier_8
 	}
+
+	#AGOT Added
+	effect_desc = agot_sailing_activity_cost_discount_minor_desc
 
 	on_complete = {
 		#Mandala Creator Aspect

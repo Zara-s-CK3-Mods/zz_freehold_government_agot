@@ -147,8 +147,8 @@ slavery_laws = {
 					#Not agot_is_independent_ruler so they don't lose the law during megawars
 					agot_is_independent_ruler = yes
 					AND = {
-						exists = var:pre_war_liege
-						var:pre_war_liege = { has_realm_law = slavery_allowed_law }
+						exists = var:agot_pwl_direct
+						var:agot_pwl_direct = { has_realm_law = slavery_allowed_law }
 					}
 				}
 				NOT = {

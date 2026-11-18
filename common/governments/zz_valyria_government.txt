@@ -15,6 +15,8 @@
         house_aspirations = yes
         noble_families = yes
         admin_allows_holding_multiple_primary_tier_titles = yes
+        allow_as_base_for_baronies = no # as AGOT's administrative government
+        allow_accolades = yes # as AGOT's administrative government
         treasury = yes
 		replace_gold_cost_by_treasury = yes
         #merit = yes 
@@ -68,6 +70,7 @@
     # Use flags instead of has_government for moddability if possible (i.e., wherever not visible to the player).
     flags = {
         government_is_freehold
+        government_is_default # AGOT: groups governments that use the regular lifestyle perks
         government_is_administrative
         government_can_use_tributary_men_at_arms
 

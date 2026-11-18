@@ -1698,6 +1698,18 @@ change_state_faith = {
 	is_valid = {
 		government_allows = state_faith
 		NOT = { faith ?= top_liege.primary_title.state_faith }
+
+		#AGOT Added
+		trigger_if = {
+			limit = {
+				government_has_flag = government_is_norvos
+			}
+			custom_description = {
+				subject = root
+				text = "has_norvos_shadow_govt"
+				norvos_are_the_bearded_priests_the_real_power_trigger = no
+			}
+		}
 	}
 
 	is_valid_showing_failures_only = {

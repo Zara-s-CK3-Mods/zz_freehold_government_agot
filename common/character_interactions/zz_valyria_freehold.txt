@@ -364,27 +364,35 @@ demand_admin_interaction = {
 	}
 	ai_frequency = 12
 
-	desc = demand_admin_interaction_desc
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					scope:actor = { government_has_flag = government_is_japan_administrative }
+				}
+				desc = demand_admin_interaction_desc_japan
+			}
+			desc = demand_admin_interaction_desc
+		}
+	}
 
 	is_shown = {
-		scope:actor = { government_allows = administrative }
+		scope:actor = {
+			government_allows = administrative
+			trigger_if = {
+				limit = { is_ai = yes }
+				scope:recipient = { highest_held_title_tier >= tier_county }
+			}
+		}
 		scope:recipient = {
 			target_is_liege_or_above = scope:actor
 			is_ai = yes
+			is_landed = yes
 			is_ruler = yes
 			NOT = { government_allows = administrative }
 		}
-		trigger_if = {
-			limit = {
-				scope:actor = {
-					is_ai = yes
-				}
-			}
-			scope:recipient = {
-				highest_held_title_tier >= tier_county
-			}
-		}
-		#AGOT ADDED
+
+		#AGOT Added
 		scope:actor = {
 			is_human = yes
 			agot_can_be_ruler = yes
@@ -393,13 +401,28 @@ demand_admin_interaction = {
 			is_human = yes
 			agot_can_be_ruler = yes
 		}
+		prohibit_figurehead_for_norvos_ceremonial_priest_trigger = { RECIPIENT = scope:recipient }
 	}
 
 	cooldown_against_recipient = { years = 10 }
 
 	is_valid_showing_failures_only = {
-		scope:recipient = { NOT = { has_strong_hook = scope:actor } }
-		scope:recipient = { is_at_war = no }
+		scope:recipient = {
+			NOT = { has_strong_hook = scope:actor }
+			is_at_war = no
+			trigger_if = {
+				limit = {
+					is_landed = no
+					exists = domicile
+				}
+				domicile.domicile_location.county.holder = { government_allows = administrative }
+			}
+			trigger_if = {
+				limit = { exists = confederation }
+				NOT = { scope:actor.confederation ?= confederation }
+			}
+			liege = scope:actor
+		}
 		scope:actor = { is_at_war = no }
 		custom_tooltip = {
 			text = cannot_take_overt_hostile_actions_against_diarch.tt
@@ -422,6 +445,7 @@ demand_admin_interaction = {
 	# Offer hereditary boost
 	send_option = {
 		is_valid = {
+			scope:recipient = { is_landed = yes }
 			custom_tooltip = {
 				text = demand_admin_hereditary_tt
 				scope:recipient.house ?= {
@@ -480,22 +504,39 @@ demand_admin_interaction = {
 
 	on_accept = {
 		show_as_tooltip = {
-			if = { 
-				limit = {
-					scope:actor = {
-						government_has_flag = government_is_freehold 
-					}
-				}
-				change_to_administrative_interaction_effect = yes
-			}
-			else = {
-				change_to_administrative_interaction_effect = yes
-			}
+			change_to_administrative_interaction_effect = yes
 		}
+		#AGOT Disabled
+		# if = {
+		# 	limit = {
+		# 		scope:recipient = { is_ai = yes }
+		# 	}
+		# 	scope:recipient = {
+		# 		set_variable = {
+		# 			name = demand_admin_accepted_ai_block
+		# 			value = scope:actor
+		# 			years = 10
+		# 		}
+		# 	}
+		# }
 	}
 
 	on_decline = {
-		scope:recipient = { custom_tooltip = demand_admin_interaction_vassal_refuses }
+		# In Japan, this starts a war
+		if = {
+			limit = {
+				scope:actor = { government_has_flag = government_is_japan_administrative }
+				scope:recipient = {
+					is_landed = yes
+					government_has_flag = government_is_japan_feudal
+				}
+			}
+			tgp_japan_demand_administrative_refusal_effect = yes
+		}
+		# Elsewhere it does not
+		else = {
+			scope:recipient = { custom_tooltip = demand_admin_interaction_vassal_refuses }
+		}
 	}
 
 	ai_potential = {
@@ -524,6 +565,7 @@ demand_admin_interaction = {
 
 	ai_accept = {
 		base = 0
+		japan_demand_admin_acceptance_modifier = yes
 		demand_admin_acceptance_modifier = yes
 	}
 }

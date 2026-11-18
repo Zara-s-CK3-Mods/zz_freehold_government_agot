@@ -275,10 +275,7 @@
 		}
 		can_have = {
 			NOT = { government_has_flag = government_is_nomadic }
-			OR = {
-				can_have_single_heir_succession_law_trigger = yes
-				historical_succession_access_single_heir_succession_law_trigger = yes
-			}
+			can_have_single_heir_succession_law_trigger = yes
 		}
 		can_pass = {
 			can_change_succession_law_trigger = yes
@@ -310,7 +307,8 @@
 		modifier = {
 			glory_hound_opinion = -10
 			parochial_opinion = -5
-			player_heir_opinion = 20
+			#AGOT Disabled
+			# player_heir_opinion = 20
 			eligible_child_except_player_heir_opinion = -5
 		}
 		pass_cost = {
@@ -574,11 +572,6 @@
 		can_have = {
 			NOT = { government_has_flag = government_is_nomadic }
 			can_have_acclamation_succession_law_trigger = yes
-		}
-		can_title_have = {
-			#AGOT Modified
-			# this = title:e_byzantium
-			always = no
 		}
 		should_start_with = {
 			has_ep3_dlc_trigger = yes
@@ -1688,6 +1681,44 @@
 	}
 
 	#AGOT Added
+	norvos_regency_succession_law = {
+		can_keep = {
+			can_have_norvoshi_regency_succession_law_trigger = yes
+		}
+		can_pass = {
+			can_have_norvoshi_regency_succession_law_trigger = yes
+		}
+		can_have = {
+			can_have_norvoshi_regency_succession_law_trigger = yes
+		}
+		can_title_have = {
+			exists = var:administrative_ui_special_title
+		}
+		should_show_for_title = { # Never show this in the UI, just apply it through script
+			always = no
+		}
+		can_remove_from_title = {
+			always = no
+		}
+		should_start_with = {
+			always = no
+		}
+		succession = {
+			order_of_succession = appointment
+			appointment_type = norvos_regent_appointment
+		}
+		flag = advanced_succession_law
+		flag = can_designate_heirs
+		flag = appointment_type_succession
+		pass_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+		potential = {
+			government_allows = administrative
+		}
+	}
+
+	#AGOT Added
 	nights_watch_realm_succession_law = {
 		can_keep = {
 			government_has_flag = government_is_nw
@@ -1776,6 +1807,26 @@
 	}
 
 	#AGOT Added
+	lorathi_principality_succession_law = {
+		can_keep = {
+			has_government = lorathi_principality_government
+		}
+		can_have = {
+			has_government = lorathi_principality_government
+		}
+		should_start_with = {
+			has_government = lorathi_principality_government
+		}
+		potential = {
+			has_government = lorathi_principality_government
+		}
+		succession = {
+			order_of_succession = generate
+		}
+		flag = elective_succession_law
+	}
+
+	#AGOT Added
 	free_city_election_succession_law = {
 		can_keep = {
 			government_allows = administrative
@@ -1788,6 +1839,21 @@
 			can_change_succession_law_trigger = yes
 			government_allows = administrative
 			is_independent_ruler = yes
+			trigger_if = {
+				limit = {
+					OR = {
+						primary_title = title:k_norvos
+						top_liege ?= {
+							primary_title = title:k_norvos
+						}
+					}
+				}
+				custom_description = {
+					subject = root
+					text = "has_norvos_shadow_govt"
+					norvos_are_the_bearded_priests_the_real_power_trigger = no
+				}
+			}
 			NOT = { 
 				government_has_flag = government_is_freehold
 			}

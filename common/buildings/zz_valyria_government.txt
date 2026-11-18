@@ -7,7 +7,8 @@
 	can_construct = {
 		scope:holder.capital_province = this
 		scope:holder = {
-			has_trait = zz_magister
+			has_global_variable = zz_SOTHM
+			has_trait_with_flag = zz_magister
 			government_has_flag = government_is_freehold
 		}
 	}
@@ -124,6 +125,8 @@ valyrian_walls_01 = {
 		fort_level = 4
 	}
 	county_holding_modifier = {
+		holding = city_holding
+		income_mult = 0.2
 	}
 	character_modifier = {
 	}

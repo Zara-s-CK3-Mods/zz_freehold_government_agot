@@ -98,6 +98,12 @@ change_to_administrative_effect = {
 					scope:governor_liege = { government_has_flag = government_is_steppe_admin }
 					NOT = { government_has_flag = government_is_steppe_admin }
 				}
+				#AGOT Added
+				AND = {
+					government_allows = administrative
+					scope:governor_liege = { government_has_flag = government_is_norvos }
+					NOT = { government_has_flag = government_is_norvos }
+				}
 			}
 		}
 		# Only case where Estate type is shared between Admin and non-Admin
@@ -253,6 +259,37 @@ change_to_administrative_effect = {
 				NEW_GOVERNMENT_TYPE = meritocratic_government
 			}
 			change_government = meritocratic_government
+		}
+		#AGOT Added, Norvos
+		else_if = {
+			limit = {
+				trigger_if = {
+					limit = {
+						scope:governor_liege ?= this
+					}
+					top_liege ?= { government_has_flag = government_is_norvos }
+				}
+				trigger_else = {
+					scope:governor_liege = { government_has_flag = government_is_norvos }
+				}
+			}
+			capital_province = {
+				if = {
+					limit = {
+						OR = {
+							has_holding_type = tribal_holding
+							has_holding_type = herder_holding
+							has_holding_type = nomad_holding
+						}
+					}
+					set_holding_type = castle_holding
+				}
+			}
+			tgp_domicile_conversion_when_changing_government_type = {
+				NEW_DOMICILE_TYPE = estate
+				NEW_GOVERNMENT_TYPE = norvos_government
+			}
+			change_government = norvos_government
 		}
 		else_if = {
 			limit = {

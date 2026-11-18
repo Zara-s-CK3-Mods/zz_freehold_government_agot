@@ -80,8 +80,10 @@ influence_candidacy_interaction = {
 			OR = {
 				has_title_law_flag = appointment_type_succession
 				holder = { has_realm_law_flag = appointment_type_succession }
+
 				#AGOT Added
 				holder = { has_realm_law_flag = free_city_election_succession_law }
+				holder = { has_realm_law_flag = norvos_regency_succession_law }
 				holder = { has_realm_law_flag = dragon_lord_acclamation_succession_law }			
 			}
 		}
@@ -447,6 +449,68 @@ influence_candidacy_interaction = {
 				}
 			}
 		}
+
+		#AGOT Added
+		piety = {
+			if = {
+				limit = {
+					OR = {
+						scope:actor = { government_has_flag = government_is_norvos }
+						scope:actor.top_liege ?= { government_has_flag = government_is_norvos }
+					}
+				}
+				# Base cost
+				switch = {
+					trigger = yes
+					scope:as_much_as_needed_influence_option = {
+						add = {
+							if = {
+								limit = { exists = scope:secondary_recipient }
+								value = {
+									add = {
+										value = "scope:target.current_heir.appointment_candidate_score(scope:target)"
+										multiply = 1.1
+									}
+									subtract = "scope:secondary_recipient.appointment_candidate_score(scope:target)"
+									multiply = 5
+									min = 20 # We do this to prevent cases when the default score of the candidate is already much higher than that the heir
+								}
+							}
+							else = { value = 20 } # Show the default cost if there is no candidate selected yet
+							desc = BASE
+						}
+					}
+					scope:major_influence_option = {
+						add = {
+							value = appointment_major_influence_cost
+							desc = BASE
+						}
+					}
+					scope:medium_influence_option = {
+						add = {
+							value = appointment_medium_influence_cost
+							desc = BASE
+						}
+					}
+					scope:medium_influence_loss_option = {
+						add = {
+							value = appointment_medium_influence_cost
+							desc = BASE
+						}
+					}
+					scope:major_influence_loss_option = {
+						add = {
+							value = appointment_major_influence_cost
+							desc = BASE
+						}
+					}
+				}
+			}
+			else = {
+				value = 0
+			}
+		}
+	
 	}
 
 	localization_values = {
@@ -880,6 +944,9 @@ support_candidacy_interaction = {
 					}
 				}
 			}
+
+			#AGOT Added
+			is_human = yes
 		}
 		scope:actor = {
 			NOT = { is_at_war_with = scope:recipient }
@@ -2656,6 +2723,7 @@ demand_admin_interaction = {
 			is_ruler = yes
 			NOT = { has_same_government = scope:actor }
 		}
+
 		#AGOT Added
 		scope:actor = {
 			is_human = yes
@@ -2665,6 +2733,7 @@ demand_admin_interaction = {
 			is_human = yes
 			agot_can_be_ruler = yes
 		}
+		prohibit_figurehead_for_norvos_ceremonial_priest_trigger = { RECIPIENT = scope:recipient }
 	}
 
 	cooldown_against_recipient = { years = 10 }
@@ -6368,13 +6437,41 @@ governor_removal_interaction = {
 
 	is_shown = {
 		scope:actor = {
-			top_liege = this
-			government_allows = administrative
+			#AGOT Modified
+			# top_liege = this
+			# government_allows = administrative
+			OR = {
+				AND = {
+					top_liege = this
+					government_allows = administrative
+				}
+				AND = {
+					primary_title = title:d_norvos_high_priesthood
+					top_liege = title:k_norvos.holder
+					norvos_are_the_bearded_priests_the_real_power_trigger = yes
+					title:k_norvos.holder ?= {
+						government_has_flag = government_is_norvos
+						diarch ?= scope:actor
+						has_diarchy_parameter = diarch_can_force_step_down_admin_appointments
+					}
+				}
+			}
 		}
 		scope:recipient = {
 			this != scope:actor
 			is_governor = yes
-			is_vassal_of = scope:actor
+			#AGOT Modified
+			#is_vassal_of = scope:actor
+			OR = {
+				is_vassal_of = scope:actor
+				trigger_if = {
+					limit = {
+						norvos_are_the_bearded_priests_the_real_power_trigger = yes
+						scope:actor = title:d_norvos_high_priesthood.holder
+					}
+					is_vassal_of = title:k_norvos.holder
+				}
+			}
 		}
 		#AGOT Added
 		scope:actor = {
@@ -6549,6 +6646,16 @@ governor_removal_interaction = {
 						}
 					}
 				}
+			}
+
+			#AGOT Added
+			if = {
+				limit = {
+					scope:actor = {
+						primary_title ?= title:d_norvos_high_priesthood
+					}
+				}
+				value = 0
 			}
 		}
 	}
@@ -6733,13 +6840,30 @@ governor_removal_interaction = {
 				title_revocation_stress_effect = { VASSAL = scope:recipient }
 			}
 		}
-		war_for_revoke_effect = {
-			LIEGE = scope:actor
-			REBEL = scope:recipient
+		#AGOT Modified
+		# war_for_revoke_effect = {
+		# 	LIEGE = scope:actor
+		# 	REBEL = scope:recipient
+		# }
+		if = {
+			limit = {
+				scope:actor = title:d_norvos_high_priesthood.holder
+			}
+		}
+		else = {
+			war_for_revoke_effect = {
+				LIEGE = scope:actor
+				REBEL = scope:recipient
+			}
 		}
 		scope:actor = {
 			if = {
-				limit = { has_realm_law_flag = vassal_refusal_is_treason }
+				#AGOT Modified
+				#limit = { has_realm_law_flag = vassal_refusal_is_treason }
+				limit = {
+					has_realm_law_flag = vassal_refusal_is_treason
+					scope:actor != title:d_norvos_high_priesthood.holder
+				}
 				add_opinion = {
 					target = scope:recipient
 					modifier = treasonous_revoke_refusal
@@ -6784,6 +6908,9 @@ governor_removal_interaction = {
 	# AI
 	ai_targets = {
 		ai_recipients = vassals
+
+		#AGOT Added
+		ai_recipients = peer_vassals
 	}
 
 	ai_frequency_by_tier = {
@@ -6861,6 +6988,22 @@ governor_removal_interaction = {
 			who = scope:actor
 			opinion_target = scope:recipient
 			multiplier = -0.25
+		}
+
+		#AGOT Added
+		modifier = {
+			scope:actor = title:d_norvos_high_priesthood.holder
+			scope:recipient = {
+				faith != title:d_norvos_high_priesthood.holder.faith
+			}
+			factor = 10
+		}
+
+		#AGOT Added
+		modifier = {
+			scope:actor = title:d_norvos_high_priesthood.holder
+			has_two_or_more_sinner_traits_in_norvos_trigger = { CHARACTER = scope:recipient }
+			add = 100
 		}
 	}
 }
@@ -7704,7 +7847,21 @@ force_step_down_interaction = {
 
 	is_shown = {
 		scope:actor = {
-			government_allows = administrative
+			#AGOT Modified
+			# government_allows = administrative
+			OR = {
+				government_allows = administrative
+				AND = {
+					norvos_are_the_bearded_priests_the_real_power_trigger = yes
+					primary_title = title:d_norvos_high_priesthood
+					top_liege = title:k_norvos.holder
+					title:k_norvos.holder ?= {
+						government_has_flag = government_is_norvos
+						diarch ?= scope:actor
+						has_diarchy_parameter = diarch_can_force_step_down_admin_appointments
+					}
+				}
+			}
 			top_liege != this
 			this != scope:recipient
 		}
@@ -8072,6 +8229,15 @@ force_step_down_interaction = {
 				multiply = -2
 			}
 			desc = INTERACTION_RECIPIENT_INTRIGUE
+		}
+
+		#AGOT Added
+		modifier = {
+			scope:actor = title:d_norvos_high_priesthood.holder
+			scope:recipient = {
+				faith = title:d_norvos_high_priesthood.holder.faith
+			}
+			factor = 10
 		}
 	}
 

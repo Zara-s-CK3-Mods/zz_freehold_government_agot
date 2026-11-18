@@ -16,7 +16,8 @@
 			}
 			if = { 
 				limit = { 
-					has_trait = zz_magister
+					has_global_variable = zz_SOTHM
+					has_trait_with_flag = zz_magister
 					
 				}
 				add = {
@@ -1014,7 +1015,8 @@ mage_lord_family = {
 
 			if = { 
 				limit = { 
-					has_trait = zz_magister
+					has_global_variable = zz_SOTHM
+					has_trait_with_flag = zz_magister
 					
 				}
 				add = {
@@ -1771,7 +1773,8 @@ mage_lord_family = {
 			if = { 
 				limit = { 
 					NOT = {
-						has_trait = zz_magister
+						has_global_variable = zz_SOTHM
+						has_trait_with_flag = zz_magister
 					}
 				}
 				multiply = {

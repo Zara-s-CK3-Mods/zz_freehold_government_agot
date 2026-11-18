@@ -27,7 +27,8 @@ construct_mages_spire = {
 	is_shown = {
 		has_tgp_dlc_trigger = yes
 		has_government = freehold_government
-		has_trait = zz_magister
+		has_global_variable = zz_SOTHM
+		has_trait_with_flag = zz_magister
 		OR = {
 			AND = {
 				is_independent_ruler = yes
@@ -41,13 +42,6 @@ construct_mages_spire = {
 
 	is_location_valid = {
 		scope:province = {
-			custom_tooltip = {
-				text = great_project_type_construct_great_barracks_military_governor_duchy_capital
-				this = barony.holder.capital_barony.title_province # is their capital
-				duchy = {
-					title_capital_county.title_province = scope:province # is also the duchy capital
-				}
-			}
 			custom_tooltip = {
 				text = great_project_type_construct_mages_spire_does_not_already_have_mages_spire
 				NOT = {
@@ -83,7 +77,8 @@ construct_mages_spire = {
 				}
 			}
 		}
-		has_trait = zz_magister
+		has_global_variable = zz_SOTHM
+		has_trait_with_flag = zz_magister
 	}
 
 	cost = {
